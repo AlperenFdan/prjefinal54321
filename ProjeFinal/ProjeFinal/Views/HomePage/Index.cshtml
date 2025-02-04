@@ -1,0 +1,99 @@
+﻿@model List<object>
+@{
+    ViewBag.Title = "Index"; Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html >
+<head>
+    <link href="~/Content/MainPageStylee.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body style="background: linear-gradient(to bottom, Black, #1A1A1A,#1A1A1A,Black,Black); ">
+    <div class="ProductImage">
+        <img src="~/MyDataForFinalProject/maxresdefault.jpg" />
+    </div>
+    <div class="ProductPage">
+        <div class="kategoriler">
+            <h3> Kategoriler </h3>
+            <a href="@Url.Action("Index","HomePage")" class="active">Tüm Ürünlerimiz </a>
+            <a href="@Url.Action("Index","GraphicsCard")">Grafik Kartları</a>
+            <a href="@Url.Action("Index","Processor")">İşlemciler</a>
+            <a href="@Url.Action("Index","Memory")">RAM</a>
+            <a href="@Url.Action("Index","Motherboard")">Anakartlar</a>
+            <a href="@Url.Action("Index","Storage")">Depolama</a>
+     
+        </div>
+        <div class="Background">
+            @foreach (object item in Model)
+
+            {
+                if ((bool)item.GetType().GetProperty("IsActived").GetValue(item))
+                {
+                    int IDForView = (int)item.GetType().GetProperty("ID").GetValue(item);
+                    decimal PriceForView = (decimal)item.GetType().GetProperty("Price").GetValue(item);
+                    decimal ListPriceForView = (decimal)item.GetType().GetProperty("ListPrice").GetValue(item);
+                    string TypeForItem = item.GetType().Name.Split('_')[0]; ;
+                    <div class="products">
+                        <a href="@Url.Action("Detail",TypeForItem, new { id = IDForView })" style="text-decoration:none">
+                            <div>
+
+                                <img src="~/MyDataForFinalProject/Photos/@item.GetType().GetProperty("imgs").GetValue(item)" class="image" />
+
+                            </div>
+                            <div class="name">
+                                <label class="name">@item.GetType().GetProperty("Name").GetValue(item)</label>
+                            </div>
+                            <div class="price">
+
+                                @if (ListPriceForView < PriceForView && ListPriceForView != 0)
+                                {
+                                    <label class="price" style="box-shadow: 0 1px 0px rgb(76 255 0)">@ListPriceForView$</label>
+                                    <del>@PriceForView$  </del>
+
+                                }
+                                else
+                                {
+                                    <label class="price">@PriceForView $</label>
+                                }
+                            </div>
+                        </a>
+                        <div class="cart">
+                            <a href="@Url.Action("AddToCart","SCart", new {Pid=IDForView,typ=item.GetType().Name.ToString().Split('_')[0],q=1})" style="text-decoration:none" class="DetailButton">
+                                Sepete ekle
+                            </a>
+
+                        </div>
+
+
+                    </div>
+                }
+
+            }
+
+
+
+        </div>
+    </div>
+
+    <div style="clear:both"> </div>
+    <div class="ContentParent">
+        <div class="content">
+            <div class="footer">
+                © 2025 E/H'nin Tüm Hakları Saklıdır.(İade kabul etmiyoruz Anlayışsızlığınız için teşekkürler)
+            </div>
+            <div class="footer">
+                İletişim 0534 448 21 08(sonu salladım)
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+       
+        <div class="wpimg">
+            <img src="~/MyDataForFinalProject/1255781-3840x1200-desktop-dual-screen-nvidia-background-image.jpg" />
+        </div>
+
+    </div>
+
+</body>
+</html>
+

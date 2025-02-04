@@ -1,0 +1,48 @@
+﻿@model ProjeFinal.Models.Users
+@{
+    ViewBag.Title = "Index";
+    Layout = "";
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="~/Areas/ManagerPanel/Data/Styles/MangerLogin.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <div class="LoginPanelCnavas">
+        <div class="imga">
+            <img src="~/Areas/ManagerPanel/Data/LogoEHupifey - Kopya.png" />
+        </div>
+        @using (Html.BeginForm())
+        {
+
+
+
+            <div class="LoginPlace">
+                <div class="row">
+                    @Html.EditorFor(x => x.Email, new { htmlAttributes = new { @class = "input", @placeholder = "Mail Adresiniz" } })
+
+                </div>
+                <div class="row">
+                    @Html.EditorFor(x => x.Password, new { htmlAttributes = new { @class = "input", @placeholder = "Şifreniz" } })
+
+                </div>
+                <div class="row" style="margin-bottom:20px">
+
+                    <input type="submit" class="button" value="Giriş Yap" />  
+                    <a href="@Url.Action("Create","Login")" class="RegisterB"> Üye ol?</a>
+                </div>
+                
+
+            </div>
+            @Html.ValidationSummary();
+            if (ViewBag.error != null)
+            {
+                <div class="validation-summary-errors" style="margin-top:120px;padding:20px;margin-left:70px;">
+                    <div> @ViewBag.error </div>
+                </div>
+            }
+        }
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Areas/ManagerPanel/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="~/Areas/ManagerPanel/Data/Styles/ManagerHomeStyle.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body style="background: linear-gradient(to bottom, Black,rgb(15,15,15),rgb(15,15,15),rgb(15,15,15),Black); background-repeat: no-repeat; ">
+    <div class="statsParent">
+        <div class="Stats">
+            <div class="Information">
+                <h2>Aktif Ürün sayısı</h2>
+                <h2>@ViewBag.ProductCount</h2>
+            </div>
+        </div>
+        <div class="Stats">
+            <div class="Information">
+                <h2>Aktif Kullanıcı sayısı</h2>
+                <h2>@ViewBag.UserCount</h2>
+            </div>
+           
+        </div>
+        <div class="Stats">
+            <div class="Information">
+                <h2>Aktif Kategori sayısı</h2>
+                <h2>@ViewBag.CategoryCount</h2>
+            </div>
+        </div>
+        <div class="Stats">
+            <div class="Information">
+                <h2>Aktif Marka sayısı</h2>
+                <h2>@ViewBag.BrandCount</h2>
+            </div>
+        </div>
+    </div>
+    <div class="TakeProductPlace">
+        @if (ViewBag.Infromation != null)
+        {
+            <h2 style="color:red;margin-top:10px;">  @ViewBag.Infromation </h2>
+        }
+        <a href="@Url.Action("TakeProducts","MangerHome", new {way = false})">Ana bayiden ürünleri getir</a>
+        <a href="@Url.Action("TakeProducts","MangerHome", new {way = true})">Sadece ana bayinin ürünlerini getir</a>
+        <div style="clear:both"></div>
+       
+    </div>
+ 
+        @if (ViewBag.TotalPrice != null)
+        {
+            
+            <div class="Invoice">
+                <h2>Toplam Tutar : @ViewBag.TotalPrice (İndirim oranı %@ViewBag.Discount) ||</h2>
+                <h2>Toplam Alınan Ürün : @ViewBag.CountP ||</h2>
+                <h2>Toplam Gelen Kategori : @ViewBag.CountC ||</h2>
+                <h2>Toplam Gelen Marka : @ViewBag.CountB ||</h2>
+            </div>
+        }
+   
+</body>
+</html>

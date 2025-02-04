@@ -1,0 +1,49 @@
+﻿@model  ProjeFinal.Areas.ManagerPanel.Data.ViewModelForMangerLogin
+@{
+    ViewBag.Title = "MangerLogin";
+
+}
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="~/Areas/ManagerPanel/Data/Styles/MangerLogin.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <div class="LoginPanelCnavas">
+        <div class="imga">
+            <img src="~/Areas/ManagerPanel/Data/LogoEHupifey - Kopya.png" />
+        </div>
+        @using (Html.BeginForm())
+        {
+
+
+
+            <div class="LoginPlace">
+                <div class="row">
+                    @Html.EditorFor(x => x.EMail, new { htmlAttributes = new { @class = "input", @placeholder = "Mail Adresiniz" } })
+
+                </div>
+                <div class="row">
+                    @Html.EditorFor(x => x.Password, new { htmlAttributes = new { @class = "input", @placeholder = "Şifreniz" } })
+
+                </div>
+                <div class="row">
+                    <input type="submit" class="button" style="margin-left:150px;" value="Giriş Yap" />
+                </div>
+            </div>
+            <div style="clear:both">
+
+            </div>
+            @Html.ValidationSummary(); 
+            if (ViewBag.Warning != null)
+            {
+                <div class="validation-summary-errors">
+                    <div> @ViewBag.Warning </div>
+                </div>
+            }
+        }
+    </div>
+</body>
+</html>

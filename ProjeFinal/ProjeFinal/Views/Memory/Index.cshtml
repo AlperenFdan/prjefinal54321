@@ -1,0 +1,81 @@
+﻿@model IEnumerable<ProjeFinal.Models.Memory>
+@{
+    ViewBag.Title = "Index"; Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*background: linear-gradient(to bottom, Black,Black,#5e8cc4, #92d6e5,#4975a8,Black,Black);*@
+<html>
+<head>
+    <link href="~/Content/MainPageStylee.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body style="background: linear-gradient(to bottom,Black,#6c3ba2,#efecb5,#6c3ba2,Black); ">
+    <div class="ProductImage">
+        <img src="~/MyDataForFinalProject/crucial-DDR5-pro-overclocking-mobile-image.jpg" />
+    </div>
+    <div class="ProductPage">
+        <div class="kategoriler">
+            <h3> Kategoriler </h3>
+            <a href="@Url.Action("Index","HomePage")">Tüm Ürünlerimiz </a>
+            <a href="@Url.Action("Index","GraphicsCard")">Grafik Kartları</a>
+            <a href="@Url.Action("Index","Processor")">İşlemciler</a>
+            <a href="@Url.Action("Index","Memory")" class="active">RAM</a>
+            <a href="@Url.Action("Index","Motherboard")">Anakartlar</a>
+            <a href="@Url.Action("Index","Storage")">Depolama</a>
+     
+        </div>
+        <div class="Background">
+            @foreach (ProjeFinal.Models.Memory str in Model)
+            {
+                if (str.IsDeleted == false && str.IsActived == true)
+                {
+
+                    <div class="products">
+                        <a href="@Url.Action("Detail","Memory", new {id=str.ID})" style="text-decoration:none">
+                            <div>
+
+                                <img src="~/MyDataForFinalProject/Photos/@str.imgs" class="image" />
+
+                            </div>
+                            <div class="name">
+
+                                <div class="price">
+                                    <label class="name">@str.Name - @str.TotalMemoryCapacity</label>
+                                </div>
+                                @if (str.ListPrice < str.Price && str.ListPrice != 0)
+                                {
+                                    <label class="price" style=" box-shadow: 0 1px 0px rgb(76 255 0)">@str.ListPrice $</label>
+                                    <del>@str.Price$  </del>
+
+                                }
+                                else
+                                {
+                                    <label class="price">@str.Price $</label>
+                                }
+                            </div>
+                        </a>
+                        <div class="cart">
+                            <a href="@Url.Action("AddToCart","SCart", new {Pid=str.ID,typ=str.GetType().Name.ToString().Split('_')[0],q=1})" style="text-decoration:none" class="DetailButton">
+                                Sepete ekle
+                            </a>
+
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+    <div style="clear:both">   </div>
+    <div class="ContentParent">
+        <div class="content">
+            <div class="footer">
+                © 2025 E/H'nin Tüm Hakları Saklıdır.(İade kabul etmiyoruz Anlayışsızlığınız için teşekkürler)
+            </div>
+            <div class="footer">
+                İletişim 0534 448 21 08(sonu salladım)
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

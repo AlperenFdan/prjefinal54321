@@ -1,0 +1,1155 @@
+﻿<Window x:Class="EH_Store_Admin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EH_Store_Admin"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="850" Width="1396" Loaded="Window_Loaded">
+
+    <Window.Resources>
+
+        <!--Styles-->
+
+        <Style x:Key="RoundedTextBoxStyle" TargetType="TextBox">
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Padding" Value="3.5" />
+            <Setter Property="FontSize" Value="10" />
+            <Setter Property="Background" Value="White" />
+            <Setter Property="BorderBrush" Value="Gray" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Border
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="10">
+                            <ScrollViewer
+                                HorizontalScrollBarVisibility="Disabled"
+                                VerticalScrollBarVisibility="Disabled"
+                                Margin="0"
+                                x:Name="PART_ContentHost"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="RoundedTabItem" TargetType="TabItem">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TabItem}">
+                        <Border Background="White" 
+                      BorderBrush="#FFBDBDBD" 
+                      BorderThickness="1" 
+                      CornerRadius="2"
+                          Height="30" Width="80">
+                            <ContentPresenter ContentSource="Header"  HorizontalAlignment="Center" 
+                                    VerticalAlignment="Center"/>
+
+                        </Border>
+
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="RoundedButton" TargetType="Button">
+            <Setter Property="Background" Value="White" />
+            <Setter Property="BorderBrush" Value="Gray" />
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border 
+                    Background="{TemplateBinding Background}" 
+                    BorderBrush="{TemplateBinding BorderBrush}" 
+                    BorderThickness="{TemplateBinding BorderThickness}" 
+                    CornerRadius="10">
+
+                            <ContentPresenter 
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center" />
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FFF3F3F3" />
+                                <Setter Property="BorderBrush" Value="Black" />
+                            </Trigger>
+
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#FFF3F3F3" />
+                                <Setter Property="BorderBrush" Value="#FF606060" />
+                            </Trigger>
+
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Background" Value="#FFEEEEEE" />
+                                <Setter Property="Foreground" Value="#FFAAAAAA" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <!--Styles-->
+
+        <!--StoryBoard-->
+        <Storyboard x:Key="FadeAdminMessage">
+            <DoubleAnimation Storyboard.TargetProperty="Opacity"
+    From="1" To="0"
+    Duration="0:0:1"
+   />
+        </Storyboard>
+        <ControlTemplate x:Key="MyButtonTemplate" TargetType="{x:Type Button}">
+            <Border Background="White" BorderBrush="Black" BorderThickness="1.5" CornerRadius="30">
+                <ContentPresenter  HorizontalAlignment="Center" Margin="12" />
+            </Border>
+        </ControlTemplate>
+
+        <Storyboard x:Key="MyFadeOutStoryboard">
+            <DoubleAnimation Storyboard.TargetProperty="Opacity" 
+                             From="1" To="0" 
+                             Duration="0:0:0.5" Completed="LoginPageFadeOut" />
+        </Storyboard>
+        <Storyboard x:Key="MyFadeOutErrorMassage">
+            <DoubleAnimation Storyboard.TargetProperty="Opacity" FillBehavior="Stop" 
+                       From="1" To="0" 
+                       Duration="0:0:0.5" Completed="ErrorMassageFadaeOut"/>
+        </Storyboard>
+        <!--StoryBoard-->
+        <ObjectDataProvider x:Key="objdata" ObjectType="{x:Type local:ViewModelcik}"></ObjectDataProvider>
+    </Window.Resources>
+
+    <Grid>
+
+
+
+        <Canvas x:Name="MainCanvas" Visibility="Visible"  Margin="-2,-5,2,5">
+            <Canvas x:Name="ErrorMassageTabItem" Visibility="Collapsed" Height="96" Opacity="1"  Width="344" Canvas.Left="49" Canvas.Top="237" HorizontalAlignment="Left" VerticalAlignment="Top" Panel.ZIndex="10">
+                <Rectangle Height="94" Stroke="Red" Width="375" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="-16" Fill="White" RadiusX="7.167" RadiusY="7.167" Canvas.Top="-3"/>
+                <Label x:Name="l1" Content="Kayıtlanan veriler uygulama yeniden" Canvas.Left="20" Canvas.Top="11" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Calibri" Height="33" Width="304" FontSize="20"/>
+                <Label x:Name="l2" Content="Başlatıldığında kullanılabilir!" Canvas.Left="54" Canvas.Top="48" FontSize="20" FontFamily="Calibri" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+            </Canvas>
+            <TabControl x:Name="Pages" Height="658" Width="1386" HorizontalAlignment="Left" Canvas.Top="186" VerticalAlignment="Center">
+
+                <TabItem x:Name="GraphicsCards" Header="GraphicsCards" Style="{StaticResource  RoundedTabItem}">
+
+                    <Grid x:Name="TabMainGrid" Background="White">
+                        <Canvas x:Name="PageControl" >
+                            <Label x:Name="AdminMessage" Visibility="Collapsed" Content="Admin Message" Canvas.Left="484" Canvas.Top="280" FontSize="36" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Calibri"></Label>
+
+                        </Canvas>
+                        <DataGrid  SelectionMode="Single" AutoGenerateColumns="False"  MouseDoubleClick="ProductsD_MouseDoubleClick" CanUserAddRows="False" IsReadOnly="False" x:Name="ProductsD"   Margin="0,109,0,19" Background="White">
+                            <DataGrid.Columns>
+
+                                <DataGridTextColumn Header="ID" Binding="{Binding ID}" IsReadOnly="True">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="False" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+
+                                <DataGridTextColumn Header="Name" Binding="{Binding Name}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+
+                                <DataGridTextColumn Header="Price" Binding="{Binding Price}">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+                                <DataGridTextColumn Header="ListPrice" Binding="{Binding ListPrice}">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+                                <DataGridComboBoxColumn Header="Brand" ItemsSource="{Binding Source={StaticResource objdata}, Path=Brands}" 
+                                     SelectedValueBinding="{Binding BrandID}" 
+                                     DisplayMemberPath="Name" 
+                                     SelectedValuePath="ID" >
+                                    <DataGridComboBoxColumn.EditingElementStyle>
+                                        <Style TargetType="ComboBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridComboBoxColumn.EditingElementStyle>
+                                </DataGridComboBoxColumn>
+                                <DataGridComboBoxColumn Header="Category" ItemsSource="{Binding Source={StaticResource objdata}, Path=Categories}" 
+                                   SelectedValueBinding="{Binding CategoryID}" 
+                                   DisplayMemberPath="Name" 
+                                   SelectedValuePath="ID" >
+                                    <DataGridComboBoxColumn.EditingElementStyle>
+                                        <Style TargetType="ComboBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridComboBoxColumn.EditingElementStyle>
+                                </DataGridComboBoxColumn>
+                                <DataGridTextColumn Header="Series" Binding="{Binding Series}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Description" Binding="{Binding Description}">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="stock" Binding="{Binding stock}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="SStock" Binding="{Binding SStock}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="VRAM" Binding="{Binding VRAM}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Compatible Connect" Binding="{Binding CompatibleConnect}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Connects" Binding="{Binding Connects}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Storge Type" Binding="{Binding StorgeType}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Bit" Binding="{Binding bitnumber}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridCheckBoxColumn Header="IsActived" Binding="{Binding IsActived}" >
+                                    <DataGridCheckBoxColumn.EditingElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" ></Setter>
+                                        </Style>
+                                    </DataGridCheckBoxColumn.EditingElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridCheckBoxColumn Header="IsDeleted" Binding="{Binding IsDeleted}" >
+                                    <DataGridCheckBoxColumn.EditingElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" ></Setter>
+                                        </Style>
+                                    </DataGridCheckBoxColumn.EditingElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridTextColumn Header="CreationTime" Binding="{Binding CreationTime}" IsReadOnly="True" ></DataGridTextColumn>
+                                <DataGridTemplateColumn Header="Image">
+                                    <DataGridTemplateColumn.CellTemplate >
+                                        <DataTemplate>
+                                            <Button x:Name="ImageChange" IsEnabled="{Binding IsItReadOnly}" Content="{Binding imgs}" Click="ImageChange_Click"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Canvas x:Name="SettingsDG" Margin="0,0,0,511" Background="White">
+                            <Button x:Name="EditProductBtn" Content="Ürün Düzenle" Canvas.Left="1097" Canvas.Top="10" Height="40" Width="91" HorizontalAlignment="Left" VerticalAlignment="Center" Click="EditProductBtn_Click" Style="{StaticResource RoundedButton}"/>
+                            <Button x:Name="AddNewProductBtn" Content="Yeni Ürün Ekle" Canvas.Left="969" Canvas.Top="10" Height="40" Width="91" HorizontalAlignment="Center" VerticalAlignment="Top" Click="NewItemClick" Style="{StaticResource RoundedButton}"/>
+                            <Button x:Name="DeleteProduct" Content="Ürün Sil" Canvas.Left="851" Canvas.Top="10" Height="40" Width="91" HorizontalAlignment="Left" VerticalAlignment="Center" Click="DeleteProduct_Click" Style="{StaticResource RoundedButton}"/>
+                            <Button x:Name="ProcessCancelForEditBtn" Content="İşlemi İptal et" Canvas.Left="1102" Canvas.Top="64" Height="40" Width="81" Click="CancelProcessForEdit_Click" HorizontalAlignment="Left" VerticalAlignment="Center"  Visibility="Collapsed" Style="{StaticResource RoundedButton}"/>
+                            <Button x:Name="CancelProcessForProduct" Content="İşlemi İptal et" Canvas.Left="974" Canvas.Top="64" Height="40" Width="81" Click="CancelProcessForProduct_Click" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Collapsed" Style="{StaticResource RoundedButton}"/>
+                        </Canvas>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Brand" Style="{StaticResource  RoundedTabItem}" >
+                    <Grid Background="White">
+                        <DataGrid  SelectionMode="Single"  MouseDoubleClick="BrandDG_MouseDoubleClick" CanUserAddRows="False" AutoGenerateColumns="False" IsReadOnly="True"   x:Name="BrandDG" Margin="0,109,0,19" Background="White" >
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="ID" Binding="{Binding ID}">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="false" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Name" Binding="{Binding Name}">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Description" Binding="{Binding Description}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridCheckBoxColumn Header="IsActive" Binding="{Binding IsActive}" >
+                                    <DataGridCheckBoxColumn.EditingElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" ></Setter>
+                                        </Style>
+                                    </DataGridCheckBoxColumn.EditingElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridCheckBoxColumn Header="IsDeleted" Binding="{Binding IsDeleted}" >
+                                    <DataGridCheckBoxColumn.EditingElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" ></Setter>
+                                        </Style>
+                                    </DataGridCheckBoxColumn.EditingElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridTextColumn Header="CreationTime" Binding="{Binding CreationTime}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="false" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                            </DataGrid.Columns>
+
+                        </DataGrid>
+                        <Canvas Margin="0,0,0,511" Background="White">
+                            <Button x:Name="EditBrandBtn" Content="Marka Düzenle" Canvas.Left="1097" Canvas.Top="10" Height="40" Width="91" HorizontalAlignment="Left" VerticalAlignment="Center" Click="EditBrandBtn_Click" Style="{StaticResource RoundedButton}"/>
+                            <Button x:Name="AddNewBrandBtn" Content="Yeni Marka Ekle" Canvas.Left="969" Canvas.Top="10" Height="40" Width="91" HorizontalAlignment="Center" VerticalAlignment="Top" Click="AddNewBrandBtn_Click" Style="{StaticResource RoundedButton}"/>
+                            <Button x:Name="DeleteBrand" Content="Marka Sil" Canvas.Left="851" Canvas.Top="10" Height="40" Width="91" HorizontalAlignment="Left" VerticalAlignment="Center" Click="DeleteBrand_Click" Style="{StaticResource RoundedButton}" />
+                            <Button x:Name="ProcessCancelForBrandEditBtn" Content="İşlemi İptal et" Canvas.Left="1102" Canvas.Top="64" Height="40" Width="81"  HorizontalAlignment="Left" VerticalAlignment="Center"  Visibility="Collapsed" Click="ProcessCancelForEditBrand" Style="{StaticResource RoundedButton}"/>
+                            <Button x:Name="CancelProcessForBrand" Content="İşlemi İptal et" Canvas.Left="974" Canvas.Top="64" Height="40" Width="81" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Collapsed" Click="CancelProcessForBrand_Click" Style="{StaticResource RoundedButton}" />
+
+                        </Canvas>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Category" Style="{StaticResource RoundedTabItem}" HorizontalAlignment="Left" Width="80" >
+                    <Grid>
+                        <Canvas x:Name="CategoriesSettings" Margin="0,0,0,511" Background="White">
+                            <Button x:Name="EditCategoriesBtn" Content="Kategori Düzenle" Canvas.Left="1082" Canvas.Top="10" Height="40" Width="103" HorizontalAlignment="Left" VerticalAlignment="Center" Click="EditCategoriesBtn_Click" Style="{StaticResource RoundedButton}"/>
+                            <Button x:Name="AddNewCategoriesBtn" Content="Yeni Kategori Ekle" Canvas.Left="954" Canvas.Top="10" Height="40" Width="100" HorizontalAlignment="Left" VerticalAlignment="Center" Click="AddNewCategoriesBtn_Click" Style="{StaticResource RoundedButton}"/>
+                            <Button x:Name="DeleteCategories" Content="Kategori Sil" Canvas.Left="836" Canvas.Top="10" Height="40" Width="91" HorizontalAlignment="Left" VerticalAlignment="Center" Click="DeleteCategories_Click" Style="{StaticResource RoundedButton}" />
+                            <Button x:Name="ProcessCancelForCategoriesEditBtn" Content="İşlemi İptal et" Canvas.Left="1087" Canvas.Top="64" Height="40" Width="81" HorizontalAlignment="Left" VerticalAlignment="Center"  Visibility="Collapsed" Click="ProcessCancelForCategoriesEditBtn_Click" Style="{StaticResource RoundedButton}"/>
+                            <Button x:Name="CancelProcessForCategories" Content="İşlemi İptal et" Canvas.Left="959" Canvas.Top="64" Height="40" Width="81"  HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Collapsed" Click="CancelProcessForCategories_Click" Style="{StaticResource RoundedButton}"/>
+                        </Canvas>
+                        <DataGrid   SelectionMode="Single" CanUserAddRows="False" MouseDoubleClick="CategoryDG_MouseDoubleClick"  AutoGenerateColumns="False" IsReadOnly="True" x:Name="CategoryDG"  Margin="0,109,0,19" Background="White" >
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="ID" Binding="{Binding ID}">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="False" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Name" Binding="{Binding Name}">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Description" Binding="{Binding Description}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridCheckBoxColumn Header="IsActive" Binding="{Binding IsActive}" >
+                                    <DataGridCheckBoxColumn.EditingElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" ></Setter>
+                                        </Style>
+                                    </DataGridCheckBoxColumn.EditingElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridCheckBoxColumn Header="IsDeleted" Binding="{Binding IsDeleted}" >
+                                    <DataGridCheckBoxColumn.EditingElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" ></Setter>
+                                        </Style>
+                                    </DataGridCheckBoxColumn.EditingElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridTextColumn Header="CreationTime" Binding="{Binding CreationTime}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="False" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Stores" Style="{StaticResource RoundedTabItem}">
+
+                    <Grid>
+                        <Canvas Margin="0,0,0,511" Background="White">
+                            <Button x:Name="EditMemberBtn" Content="Üye Düzenle" Canvas.Left="1089" Canvas.Top="10" Height="40" Width="99" HorizontalAlignment="Left" VerticalAlignment="Center" Click="EditMemberBtn_Click" Style="{StaticResource RoundedButton}"/>
+                            <Button x:Name="AddNewMemberBtn" Content="Yeni Üye Ekle" Canvas.Left="969" Canvas.Top="10" Height="40" Width="91" HorizontalAlignment="Center" VerticalAlignment="Top" Click="AddNewMemberBtn_Click"  Style="{StaticResource RoundedButton}"/>
+                            <Button x:Name="DeleteMember" Content="Üye Sil" Canvas.Left="851" Canvas.Top="10" Height="40" Width="91" HorizontalAlignment="Left" VerticalAlignment="Center" Click="DeleteMember_Click" Style="{StaticResource RoundedButton}" />
+                            <Button x:Name="ProcessCancelForMemberEditBtn" Content="İşlemi İptal et" Canvas.Left="1102" Canvas.Top="64" Height="40" Width="81"  HorizontalAlignment="Left" VerticalAlignment="Center"  Visibility="Collapsed" Click="ProcessCancelForMemberEditBtn_Click" Style="{StaticResource RoundedButton}" />
+                            <Button x:Name="CancelProcessForMember" Content="İşlemi İptal et" Canvas.Left="974" Canvas.Top="64" Height="40" Width="81" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Collapsed" Click="CancelProcessForMember_Click" Style="{StaticResource RoundedButton}"/>
+
+                        </Canvas>
+                        <DataGrid x:Name="UsersDG"  SelectionMode="Single" MouseDoubleClick="UsersDG_MouseDoubleClick" CanUserAddRows="False" AutoGenerateColumns="False" IsReadOnly="True"    Margin="0,109,0,19" Background="White">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="ID" Binding="{Binding ID}">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="False" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Name" Binding="{Binding Name}">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Phone" Binding="{Binding Phone}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+                                <DataGridTextColumn Header="Email" Binding="{Binding Email}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridComboBoxColumn Header="Tier" ItemsSource="{Binding Source={StaticResource objdata}, Path=Tiers}" 
+                                        SelectedValueBinding="{Binding Tier}" 
+                                        DisplayMemberPath="Name" 
+                                        SelectedValuePath="ID" >
+                                    <DataGridComboBoxColumn.EditingElementStyle>
+                                        <Style TargetType="ComboBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridComboBoxColumn.EditingElementStyle>
+                                </DataGridComboBoxColumn>
+                                <DataGridCheckBoxColumn Header="IsBanned" Binding="{Binding IsBanned}" >
+                                    <DataGridCheckBoxColumn.EditingElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" ></Setter>
+                                        </Style>
+                                    </DataGridCheckBoxColumn.EditingElementStyle>
+                                </DataGridCheckBoxColumn>
+
+                                <DataGridTextColumn Header="SignUpTime" Binding="{Binding SignUpTime}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="False" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                            </DataGrid.Columns>
+
+                        </DataGrid>
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="ProcessorsTB" Header="Processors" Style="{StaticResource  RoundedTabItem}">
+                    <Grid Background="White">
+
+                        <DataGrid  SelectionMode="Single" MouseDoubleClick="ProcessorDG_MouseDoubleClick" AutoGenerateColumns="False"   CanUserAddRows="False" IsReadOnly="False" x:Name="ProcessorDG"   Margin="0,109,0,19" Background="White">
+                            <DataGrid.Columns>
+
+                                <DataGridTextColumn Header="ID" Binding="{Binding ID}" IsReadOnly="True">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="False" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+
+                                <DataGridTextColumn Header="Name" Binding="{Binding Name}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+
+                                <DataGridTextColumn Header="Price" Binding="{Binding Price}">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+                                <DataGridTextColumn Header="ListPrice" Binding="{Binding ListPrice}">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+                                <DataGridComboBoxColumn Header="Brand" ItemsSource="{Binding Source={StaticResource objdata}, Path=Brands}" 
+                    SelectedValueBinding="{Binding BrandID}" 
+                    DisplayMemberPath="Name" 
+                    SelectedValuePath="ID" >
+                                    <DataGridComboBoxColumn.EditingElementStyle>
+                                        <Style TargetType="ComboBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridComboBoxColumn.EditingElementStyle>
+                                </DataGridComboBoxColumn>
+                                <DataGridComboBoxColumn Header="Category" ItemsSource="{Binding Source={StaticResource objdata}, Path=Categories}" 
+                  SelectedValueBinding="{Binding CategoryID}" 
+                  DisplayMemberPath="Name" 
+                  SelectedValuePath="ID" >
+                                    <DataGridComboBoxColumn.EditingElementStyle>
+                                        <Style TargetType="ComboBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridComboBoxColumn.EditingElementStyle>
+                                </DataGridComboBoxColumn>
+                                <DataGridTextColumn Header="Processor Type" Binding="{Binding ProcessorType}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Description" Binding="{Binding Description}">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="stock" Binding="{Binding stock}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="SStock" Binding="{Binding SStock}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Makximum Frequency" Binding="{Binding MakximumFrequency}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="L3 Cache" Binding="{Binding L3Cache}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="L2 Cahce" Binding="{Binding L2Cahce}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Number Of Cores" Binding="{Binding NumberOfCores}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Clock Frequency" Binding="{Binding ClockFrequency}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Bus Speed" Binding="{Binding BusSpeed}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridCheckBoxColumn Header="IsActived" Binding="{Binding IsActived}" >
+                                    <DataGridCheckBoxColumn.EditingElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" ></Setter>
+                                        </Style>
+                                    </DataGridCheckBoxColumn.EditingElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridCheckBoxColumn Header="IsDeleted" Binding="{Binding IsDeleted}" >
+                                    <DataGridCheckBoxColumn.EditingElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" ></Setter>
+                                        </Style>
+                                    </DataGridCheckBoxColumn.EditingElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridTextColumn Header="CreationTime" Binding="{Binding CreationTime}" IsReadOnly="True" ></DataGridTextColumn>
+                                <DataGridTemplateColumn Header="Image">
+                                    <DataGridTemplateColumn.CellTemplate >
+                                        <DataTemplate>
+                                            <Button x:Name="ImageChange" IsEnabled="{Binding IsItReadOnly}" Content="{Binding imgs}" Click="ImageChange_ClickForProcessor"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Canvas x:Name="SettingsPc" Margin="0,0,0,511" Background="White">
+                            <Button x:Name="EditProcessorBtn" Content="Edit Processor" Canvas.Left="1097" Canvas.Top="10" Height="40" Width="91" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource RoundedButton}" Click="EditProcessorBtn_Click"/>
+                            <Button x:Name="AddNewProcessorBtn" Content="Add Processor" Canvas.Left="969" Canvas.Top="10" Height="40" Width="91" HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource RoundedButton}" Click="AddNewProcessorBtn_Click"/>
+                            <Button x:Name="DeleteProcessor" Content="Delete Processor" Canvas.Left="851" Canvas.Top="10" Height="40" Width="91" HorizontalAlignment="Left" VerticalAlignment="Center"  Style="{StaticResource RoundedButton}" Click="DeleteProcessor_Click"/>
+                            <Button x:Name="ProcessCancelForProcessorEditBtn" Content="Cancel Transaction" Canvas.Left="1102" Canvas.Top="64" Height="40" Width="81"  HorizontalAlignment="Left" VerticalAlignment="Center"  Visibility="Collapsed" Click="ProcessCancelForProcessorEditBtn_Click"  Style="{StaticResource RoundedButton}"/>
+                            <Button x:Name="CancelProcessForProcessor" Content="Cancel Transaction" Canvas.Left="974" Canvas.Top="64" Height="40" Width="81"  HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Collapsed" Click="CancelProcessForProcessor_Click" Style="{StaticResource RoundedButton}"/>
+                        </Canvas>
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="StorageTB" Header="Storages" Style="{StaticResource  RoundedTabItem}">
+                    <Grid Background="White">
+
+                        <DataGrid  SelectionMode="Single" AutoGenerateColumns="False" MouseDoubleClick="StorageDG_MouseDoubleClick"  CanUserAddRows="False" IsReadOnly="False" x:Name="StorageDG"   Margin="0,109,0,19" Background="White">
+                            <DataGrid.Columns>
+
+                                <DataGridTextColumn Header="ID" Binding="{Binding ID}" IsReadOnly="True">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="False" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+
+                                <DataGridTextColumn Header="Name" Binding="{Binding Name}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+
+                                <DataGridTextColumn Header="Price" Binding="{Binding Price}">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+                                <DataGridTextColumn Header="ListPrice" Binding="{Binding ListPrice}">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+                                <DataGridComboBoxColumn Header="Brand" ItemsSource="{Binding Source={StaticResource objdata}, Path=Brands}" 
+                                     SelectedValueBinding="{Binding BrandID}" 
+                                     DisplayMemberPath="Name" 
+                                     SelectedValuePath="ID" >
+                                    <DataGridComboBoxColumn.EditingElementStyle>
+                                        <Style TargetType="ComboBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridComboBoxColumn.EditingElementStyle>
+                                </DataGridComboBoxColumn>
+                                <DataGridComboBoxColumn Header="Category" ItemsSource="{Binding Source={StaticResource objdata}, Path=Categories}" 
+                                           SelectedValueBinding="{Binding CategoryID}" 
+                                           DisplayMemberPath="Name" 
+                                           SelectedValuePath="ID" >
+                                    <DataGridComboBoxColumn.EditingElementStyle>
+                                        <Style TargetType="ComboBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridComboBoxColumn.EditingElementStyle>
+                                </DataGridComboBoxColumn>
+                                <DataGridTextColumn Header="Storage Capacity" Binding="{Binding StorageCapacity}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Storage Type" Binding="{Binding Type}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Connections" Binding="{Binding connections}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Description" Binding="{Binding Description}">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="stock" Binding="{Binding stock}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="SStock" Binding="{Binding SStock}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Sequential Writing" Binding="{Binding SequentialWriting}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Sequential Reading" Binding="{Binding SequentialReading}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Height" Binding="{Binding Height}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Width" Binding="{Binding Width}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+                                <DataGridCheckBoxColumn Header="IsActived" Binding="{Binding IsActived}" >
+                                    <DataGridCheckBoxColumn.EditingElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" ></Setter>
+                                        </Style>
+                                    </DataGridCheckBoxColumn.EditingElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridCheckBoxColumn Header="IsDeleted" Binding="{Binding IsDeleted}" >
+                                    <DataGridCheckBoxColumn.EditingElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" ></Setter>
+                                        </Style>
+                                    </DataGridCheckBoxColumn.EditingElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridTextColumn Header="CreationTime" Binding="{Binding CreationTime}" IsReadOnly="True" ></DataGridTextColumn>
+                                <DataGridTemplateColumn Header="Image">
+                                    <DataGridTemplateColumn.CellTemplate >
+                                        <DataTemplate>
+                                            <Button x:Name="ImageChange" IsEnabled="{Binding IsItReadOnly}" Content="{Binding imgs}" Click="ImageChangeForStorage_Click"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Canvas x:Name="SettingsSt" Margin="0,0,0,511" Background="White">
+                            <Button x:Name="EditStorageBtn" Content="Edit Product" Canvas.Left="1097" Canvas.Top="10" Height="40" Width="91" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource RoundedButton}" Click="EditStorageBtn_Click"/>
+                            <Button x:Name="AddNewStorageBtn" Content="Add Product" Canvas.Left="969" Canvas.Top="10" Height="40" Width="91" HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource RoundedButton}" Click="AddNewStorageBtn_Click"/>
+                            <Button x:Name="DeleteStorage" Content="Delete Product" Canvas.Left="851" Canvas.Top="10" Height="40" Width="91" HorizontalAlignment="Left" VerticalAlignment="Center"  Style="{StaticResource RoundedButton}" Click="DeleteStorage_Click"/>
+                            <Button x:Name="ProcessCancelForStorageEditBtn" Content="Cancel Transaction" Canvas.Left="1102" Canvas.Top="64" Height="40" Width="81"  HorizontalAlignment="Left" VerticalAlignment="Center"  Visibility="Collapsed"  Style="{StaticResource RoundedButton}" Click="ProcessCancelForStorageEditBtn_Click"/>
+                            <Button x:Name="CancelProcessForStorage" Content="Cancel Transaction" Canvas.Left="974" Canvas.Top="64" Height="40" Width="81"  HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Collapsed"  Style="{StaticResource RoundedButton}" Click="CancelProcessForStorage_Click"/>
+                        </Canvas>
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="MotherboardTB" Header="Motherboard" Style="{StaticResource  RoundedTabItem}">
+                    <Grid Background="White">
+
+                        <DataGrid  SelectionMode="Single" AutoGenerateColumns="False" MouseDoubleClick="MotherboardDG_MouseDoubleClick"   CanUserAddRows="False" IsReadOnly="False" x:Name="MotherboardDG"   Margin="0,109,0,19" Background="White">
+                            <DataGrid.Columns>
+
+                                <DataGridTextColumn Header="ID" Binding="{Binding ID}" IsReadOnly="True">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="False" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+
+                                <DataGridTextColumn Header="Name" Binding="{Binding Name}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+
+                                <DataGridTextColumn Header="Price" Binding="{Binding Price}">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+                                <DataGridTextColumn Header="ListPrice" Binding="{Binding ListPrice}">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+                                <DataGridComboBoxColumn Header="Brand" ItemsSource="{Binding Source={StaticResource objdata}, Path=Brands}" 
+                                         SelectedValueBinding="{Binding BrandID}" 
+                                         DisplayMemberPath="Name" 
+                                         SelectedValuePath="ID" >
+                                    <DataGridComboBoxColumn.EditingElementStyle>
+                                        <Style TargetType="ComboBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridComboBoxColumn.EditingElementStyle>
+                                </DataGridComboBoxColumn>
+                                <DataGridComboBoxColumn Header="Category" ItemsSource="{Binding Source={StaticResource objdata}, Path=Categories}" 
+                                           SelectedValueBinding="{Binding CategoryID}" 
+                                           DisplayMemberPath="Name" 
+                                           SelectedValuePath="ID" >
+                                    <DataGridComboBoxColumn.EditingElementStyle>
+                                        <Style TargetType="ComboBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridComboBoxColumn.EditingElementStyle>
+                                </DataGridComboBoxColumn>
+                                <DataGridTextColumn Header="Chipset Manufacturer" Binding="{Binding ChipsetManufacturer}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Description" Binding="{Binding Description}">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="stock" Binding="{Binding stock}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="SStock" Binding="{Binding SStock}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Memory Technology" Binding="{Binding MemoryTechnology}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Memory Slot" Binding="{Binding MemorySlot}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Memory Clock Speed" Binding="{Binding MemoryClockSpeed}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+                                <DataGridTextColumn Header="PCI Version" Binding="{Binding PCIVersion}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridCheckBoxColumn Header="MultiGPU" Binding="{Binding MultiGPU}" >
+                                    <DataGridCheckBoxColumn.EditingElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridCheckBoxColumn.EditingElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridCheckBoxColumn Header="IsActived" Binding="{Binding IsActived}" >
+                                    <DataGridCheckBoxColumn.EditingElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" ></Setter>
+                                        </Style>
+                                    </DataGridCheckBoxColumn.EditingElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridCheckBoxColumn Header="IsDeleted" Binding="{Binding IsDeleted}" >
+                                    <DataGridCheckBoxColumn.EditingElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" ></Setter>
+                                        </Style>
+                                    </DataGridCheckBoxColumn.EditingElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridTextColumn Header="CreationTime" Binding="{Binding CreationTime}" IsReadOnly="True" ></DataGridTextColumn>
+                                <DataGridTemplateColumn Header="Image">
+                                    <DataGridTemplateColumn.CellTemplate >
+                                        <DataTemplate>
+                                            <Button x:Name="ImageChange" IsEnabled="{Binding IsItReadOnly}" Content="{Binding imgs}" Click="ImageChangeForMotherboard_Click"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Canvas x:Name="SettingsMB" Margin="0,0,0,511" Background="White">
+                            <Button x:Name="EditMotherboardBtn" Content="Edit Product" Canvas.Left="1097" Canvas.Top="10" Height="40" Width="91" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource RoundedButton}" Click="EditMotherboardBtn_Click" />
+                            <Button x:Name="AddNewMotherboardBtn" Content="Add Product" Canvas.Left="969" Canvas.Top="10" Height="40" Width="91" HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource RoundedButton}" Click="AddNewMotherboardBtn_Click"/>
+                            <Button x:Name="DeleteMotherboard" Content="Delete Product" Canvas.Left="851" Canvas.Top="10" Height="40" Width="91" HorizontalAlignment="Left" VerticalAlignment="Center"  Style="{StaticResource RoundedButton}" Click="DeleteMotherboard_Click" />
+                            <Button x:Name="ProcessCancelForMotherboardEditBtn" Content="Cancel Transaction" Canvas.Left="1102" Canvas.Top="64" Height="40" Width="81"  HorizontalAlignment="Left" VerticalAlignment="Center"  Visibility="Collapsed"  Style="{StaticResource RoundedButton}" Click="ProcessCancelForMotherboardEditBtn_Click"/>
+                            <Button x:Name="CancelProcessForMotherboard" Content="Cancel Transaction" Canvas.Left="974" Canvas.Top="64" Height="40" Width="81"  HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Collapsed"  Style="{StaticResource RoundedButton}" Click="CancelProcessForMotherboard_Click"/>
+                        </Canvas>
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="MemoriesTB" Header="Memories" Style="{StaticResource  RoundedTabItem}">
+                    <Grid Background="White">
+
+                        <DataGrid  SelectionMode="Single" AutoGenerateColumns="False" MouseDoubleClick="MemoriesDG_MouseDoubleClick"  CanUserAddRows="False" IsReadOnly="False" x:Name="MemoriesDG"   Margin="0,109,0,19" Background="White">
+                            <DataGrid.Columns>
+
+                                <DataGridTextColumn Header="ID" Binding="{Binding ID}" IsReadOnly="True">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="False" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+
+                                <DataGridTextColumn Header="Name" Binding="{Binding Name}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+
+                                <DataGridTextColumn Header="Price" Binding="{Binding Price}">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+                                <DataGridTextColumn Header="ListPrice" Binding="{Binding ListPrice}">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+                                <DataGridComboBoxColumn Header="Brand" ItemsSource="{Binding Source={StaticResource objdata}, Path=Brands}" 
+                              SelectedValueBinding="{Binding BrandID}" 
+                              DisplayMemberPath="Name" 
+                              SelectedValuePath="ID" >
+                                    <DataGridComboBoxColumn.EditingElementStyle>
+                                        <Style TargetType="ComboBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridComboBoxColumn.EditingElementStyle>
+                                </DataGridComboBoxColumn>
+                                <DataGridComboBoxColumn Header="Category" ItemsSource="{Binding Source={StaticResource objdata}, Path=Categories}" 
+                                SelectedValueBinding="{Binding CategoryID}" 
+                                DisplayMemberPath="Name" 
+                                SelectedValuePath="ID" >
+                                    <DataGridComboBoxColumn.EditingElementStyle>
+                                        <Style TargetType="ComboBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridComboBoxColumn.EditingElementStyle>
+                                </DataGridComboBoxColumn>
+                                <DataGridTextColumn Header="Memory Type" Binding="{Binding MemoryType}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Description" Binding="{Binding Description}">
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="stock" Binding="{Binding stock}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="SStock" Binding="{Binding SStock}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Memory Frequency" Binding="{Binding MemoryFrequency}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Capacity Per Module" Binding="{Binding CapacityPerModule}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Total Memory Capacity" Binding="{Binding TotalMemoryCapacity}" >
+                                    <DataGridTextColumn.EditingElementStyle>
+                                        <Style TargetType="TextBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" />
+                                        </Style>
+                                    </DataGridTextColumn.EditingElementStyle>
+                                </DataGridTextColumn>
+
+                                <DataGridCheckBoxColumn Header="IsActived" Binding="{Binding IsActived}" >
+                                    <DataGridCheckBoxColumn.EditingElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" ></Setter>
+                                        </Style>
+                                    </DataGridCheckBoxColumn.EditingElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridCheckBoxColumn Header="IsDeleted" Binding="{Binding IsDeleted}" >
+                                    <DataGridCheckBoxColumn.EditingElementStyle>
+                                        <Style TargetType="CheckBox">
+                                            <Setter Property="IsEnabled" Value="{Binding IsItReadOnly}" ></Setter>
+                                        </Style>
+                                    </DataGridCheckBoxColumn.EditingElementStyle>
+                                </DataGridCheckBoxColumn>
+                                <DataGridTextColumn Header="CreationTime" Binding="{Binding CreationTime}" IsReadOnly="True" ></DataGridTextColumn>
+                                <DataGridTemplateColumn Header="Image">
+                                    <DataGridTemplateColumn.CellTemplate >
+                                        <DataTemplate>
+                                            <Button x:Name="ImageChange" IsEnabled="{Binding IsItReadOnly}" Content="{Binding imgs}" Click="ImageChangeForMemory_Click"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Canvas x:Name="SettingsMS" Margin="0,0,0,511" Background="White">
+                            <Button x:Name="EditMemoriesBtn" Content="Edit Product" Canvas.Left="1097" Canvas.Top="10" Height="40" Width="91" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource RoundedButton}" Click="EditMemoriesBtn_Click" />
+                            <Button x:Name="AddNewMemoriesBtn" Content="Add Product" Canvas.Left="969" Canvas.Top="10" Height="40" Width="91" HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource RoundedButton}" Click="AddNewMemoriesBtn_Click"/>
+                            <Button x:Name="DeleteMemories" Content="Delete Product" Canvas.Left="851" Canvas.Top="10" Height="40" Width="91" HorizontalAlignment="Left" VerticalAlignment="Center"  Style="{StaticResource RoundedButton}" Click="DeleteMemories_Click" />
+                            <Button x:Name="ProcessCancelForMemoriesEditBtn" Content="Cancel Transaction" Canvas.Left="1102" Canvas.Top="64" Height="40" Width="81"  HorizontalAlignment="Left" VerticalAlignment="Center"  Visibility="Collapsed"  Style="{StaticResource RoundedButton}" Click="ProcessCancelForMemoriesEditBtn_Click"/>
+                            <Button x:Name="CancelProcessForMemories" Content="Cancel Transaction" Canvas.Left="974" Canvas.Top="64" Height="40" Width="81"  HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Collapsed"  Style="{StaticResource RoundedButton}" Click="CancelProcessForMemories_Click"/>
+                        </Canvas>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+
+            <Canvas Height="186" Width="1397" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Image Height="168" Canvas.Left="7" Canvas.Top="9" Width="187" Stretch="UniformToFill" Source="/business-manager-icon-vector-21023585.jpg"/>
+                <Label x:Name="MangerName" Content="Label" Canvas.Left="212" Canvas.Top="32" RenderTransformOrigin="0.764,-0.085" FontFamily="Calibri" FontSize="18"/>
+                <Label Content="Label" Canvas.Left="212" Canvas.Top="69" RenderTransformOrigin="0.764,-0.085" FontFamily="Calibri" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <Button Content="Ürünleri yayınla" Style="{StaticResource RoundedButton}" Canvas.Left="1173" Canvas.Top="50" Height="92" Width="189" Click="Button_Click_4" FontSize="18"/>
+            </Canvas>
+        </Canvas>
+        <Canvas  Visibility="Collapsed"  x:Name="LoadingAppScreen" Height="827" Width="1396" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Black" Margin="-2,0,0,0">
+            <Canvas  Visibility="Visible" x:Name="LoginPanel" Height="496" Width="648" Canvas.Top="166" Canvas.Left="374" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Rectangle KeyDown="TextBox_KeyDown" Height="476" Canvas.Left="16" Stroke="Black" Canvas.Top="10" Width="618" Fill="White" RadiusX="16" RadiusY="16" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <TextBox Focusable="True" Name="EmailTeaxtbox" KeyDown="TextBox_KeyDown"
+Height="42"  Style="{StaticResource RoundedTextBoxStyle}" HorizontalAlignment="Left" Canvas.Left="212" Canvas.Top="193" VerticalAlignment="Top" Width="229" FontSize="30" FontFamily="Calibri" >
+
+                </TextBox>
+                <Label Content="Email" Canvas.Left="147" Canvas.Top="195" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="65" FontSize="20"/>
+                <Label Content="Password" Canvas.Left="113" Canvas.Top="259" HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="94" FontSize="20" RenderTransformOrigin="0.872,0.291"/>
+                <Button Content="Login" Click="Button_Click_1" KeyDown="TextBox_KeyDown" Style="{StaticResource RoundedButton}" Canvas.Left="248" Canvas.Top="339" RenderTransformOrigin="0.076,0.186" HorizontalAlignment="Left" VerticalAlignment="Top" Width="156" Height="54" FontFamily="Calibri" FontSize="20"/>
+                <TextBox x:Name="PasswordTeaxtbox" KeyDown="TextBox_KeyDown"
+  Height="42"  Style="{StaticResource RoundedTextBoxStyle}" Canvas.Left="212" Canvas.Top="259" Width="229" FontSize="30" FontFamily="Calibri" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Canvas x:Name="ErrorMassage" Visibility="Collapsed" Height="96" Opacity="1"  Width="343" Canvas.Left="160" Canvas.Top="366" Background="White" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Rectangle Height="94" Stroke="Red" Width="375" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="-16" Fill="White" RadiusX="7.167" RadiusY="7.167" Canvas.Top="-3"/>
+                    <Label Content="Giriş yapılmadı" Canvas.Left="106" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Calibri" Height="33" Width="132" FontSize="20"/>
+                    <Label Content=" lütfen bilgileri kontrol ediniz" Canvas.Left="51" Canvas.Top="48" FontSize="20" FontFamily="Calibri" HorizontalAlignment="Left" VerticalAlignment="Top"></Label>
+                </Canvas>
+                <Image Height="132" Canvas.Left="228" Width="192" Source="/LogoEHupifey - Kopya.png" Canvas.Top="40" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <Label Content="Manager Login" Canvas.Left="31" Canvas.Top="22" Height="36" Width="130" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Calibri"/>
+
+            </Canvas>
+
+
+        </Canvas>
+    </Grid>
+</Window>

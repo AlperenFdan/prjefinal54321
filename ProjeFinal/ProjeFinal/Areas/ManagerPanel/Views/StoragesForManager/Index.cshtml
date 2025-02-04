@@ -1,0 +1,140 @@
+﻿@model IEnumerable<ProjeFinal.Models.Storage>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/ManagerPanel/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="~/Areas/ManagerPanel/Data/Styles/IndexStyle.css" rel="stylesheet" />
+</head>
+<body style="background: linear-gradient(to bottom, Black,rgb(15,15,15),rgb(15,15,15),rgb(15,15,15),Black); background-repeat: no-repeat; ">
+    <div class="TableParent">
+        <div class="TableTop">
+            <a href="@Url.Action("Create","StoragesForManager")" class="AddButton">Ürün ekle</a>
+        </div>
+        <table class="Table">
+            <tr>
+                <th @*style="border-top: none; border-left:none"*@>Ürün resmi</th>
+                <th>Ürün No</th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    Kategori
+                </th>
+                <th>
+                    Marka
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Price)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.stock)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SStock)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IsActived)
+                </th>
+                <th @*style="border-top: none; border-right:none"*@>Seçenekler</th>
+
+            </tr>
+            @foreach (var item in Model)
+            {
+                if (item.IsDeleted)
+                {
+                    <tr style="background-color:#ffdede">
+                        <td @*style="border: none"*@>
+                            <img src="~/MyDataForFinalProject/Photos/@item.imgs" width="50" />
+                        </td>
+                        <td>@item.ID</td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Category.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Brand.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Price)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.stock)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SStock)
+                        </td>
+                        <td>
+                            @if (item.IsActived)
+                            {
+                                <label>Aktif</label>
+                            }
+                            else
+                            {
+                                <label>Pasif</label>
+                            }
+                        </td>
+                        <td>
+                            <a href="@Url.Action("Edit","StoragesForManager",new {id=item.ID})" class="Edita">Düzenle</a>
+                            <a href="@Url.Action("DeletePage","StoragesForManager",new {id=item.ID})" class="Deletea">Silme İşlemini Geri Al</a>
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    <tr>
+                        <td @*style="border:none"*@>
+                            <img width="50" src="~/MyDataForFinalProject/Photos/@item.imgs" />
+                        </td>
+                        <td>@item.ID</td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Category.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Brand.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Price)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.stock)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SStock)
+                        </td>
+                        <td>
+                            @if (item.IsActived)
+                            {
+                                <label>Aktif</label>
+                            }
+                            else
+                            {
+                                <label>Pasif</label>
+                            }
+                        </td>
+                        <td style=@*"border: none"*@>
+                            <a href="@Url.Action("Edit","StoragesForManager",new {id=item.ID})" class="Edita">Düzenle</a>
+                            <a href="@Url.Action("DeletePage","StoragesForManager",new {id=item.ID})" class="Deletea">Sil</a>
+                        </td>
+                    </tr>
+                }
+
+            }
+        </table>
+        <div class="TableBottom">
+
+        </div>
+    </div>
+
+</body>
+</html>
+

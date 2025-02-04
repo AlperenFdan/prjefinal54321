@@ -1,0 +1,72 @@
+﻿*, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+body {
+}
+.Invoice {
+    float: left;
+    width: 90%;
+    height: 75px;
+    margin-top: 120px;
+    border-radius: 10px;
+    margin-left:5%;
+    background-color: rgba(255,255,255,0.9);
+}
+    .Invoice h2{
+        margin-top:5px;
+        margin-left:10px;
+        float:left;
+    }
+.TakeProductPlace {
+    margin-top: 400px;
+    margin-left: 540px;
+    height: 300px;
+    width: 440px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.9);
+    border: 1px solid black;
+    text-align: center;
+    box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.7);
+}
+    .TakeProductPlace a {
+      
+        float:left;
+        background-color: black;
+        width: 200px;
+        color: rgba(255,255,255,1);
+        padding: 15px;
+        border: none;
+        margin-top:65px;
+        border-radius: 15px;
+        margin-left:100px;
+        text-decoration:none;
+        transition: all 0.3s ease;
+    }
+        .TakeProductPlace a:hover {
+            background-color: white;
+            color: rgba(0,0,0,1);
+            box-shadow: 0px 2px 8px Black;
+        }
+    .statsParent {
+    }
+    .statsParent .Stats {
+        float: left;
+        margin: 60px 70px;
+        height: 180px;
+        width: 240px;
+        border-radius: 10px;
+        background-color: rgba(255,255,255,0.9);
+        border: 1px solid black;
+        text-align: center;
+        box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.7);
+    }
+        .statsParent .Stats .Information{
+            height:auto;
+            width:auto;
+            margin-top:60px
+        }
+            .statsParent .Stats .Information h2 {
+
+                font-family: Calibri;
+            }

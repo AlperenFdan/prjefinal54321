@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+@{ 
+    ProjeFinal.Models.Emp mn = Session["Manager"] as ProjeFinal.Models.Emp;
+}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Areas/ManagerPanel/Data/Styles/LayoutMscss.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="Canvas">
+        <div class="Title">
+            <a href="@Url.Action("Home","MangerHome")">Müdür Paneli</a>
+        </div>
+        <div class="Profile">
+            <div class="Picture">
+
+                <img src="~/Areas/ManagerPanel/Data/file.png" />
+                <div class="namePlace">
+                    <h3 style="margin-bottom:10px; font-family:Calibri;">@mn.Name @mn.SurnName</h3>
+                </div>
+            </div>
+           
+        </div>
+        <div class="Settings">
+            <div class="SettingsForProduct">
+                <h2>Ürünler</h2>
+                <a href="@Url.Action("Index","GraphicsCardForManger")">Grafik Kartları</a>
+                <a href="@Url.Action("Index","ProcessorFortManager")">İşlemciler</a>
+                <a href="@Url.Action("Index","MemoryForManager")">RAM</a>
+                <a href="@Url.Action("Index","MotherboardForManger")">Anakartlar</a>
+                <a href="@Url.Action("Index","StoragesForManager")">Depolama</a>
+            </div>
+        
+            <div class="SettingsForProduct">
+                <h2>Diğer</h2>
+                <a href="@Url.Action("Index","BrandForManager")">Markalar</a>
+                <a href="@Url.Action("Index","CategoryForManager")">Kategoriler</a>
+                <a href="@Url.Action("Index","UserForManager")">Kullanıcılar</a>
+
+            </div>
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

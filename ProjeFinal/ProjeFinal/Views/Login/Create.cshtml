@@ -1,0 +1,65 @@
+﻿@model ProjeFinal.Models.Users
+@{
+    ViewBag.Title = "Create";
+    Layout = "";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="~/Areas/ManagerPanel/Data/Styles/MangerLogin.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <div class="LoginPanelCnavas" style="height:580px">
+        <h2 style="text-align:center; font-family:Calibri">Üye Kayıt</h2> 
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary();
+            if (ViewBag.error != null)
+            {
+                <div class="validation-summary-errors">
+                    <p>@ViewBag.error</p>
+                </div>
+            }
+
+
+            <div class="row">
+
+                @Html.TextBoxFor(model => model.Name, new { @class = "input", @placeholder = "Kullanıcı adı" })
+
+            </div>
+
+            <div class="row">
+
+                @Html.TextBoxFor(model => model.SurnName, new { @class = "input", @placeholder = "İsim" })
+
+            </div>
+
+            <div class="row">
+
+                @Html.TextBoxFor(model => model.UserName, new { @class = "input", @placeholder = "Soy isim" })
+
+            </div>
+
+            <div class="row">
+
+                @Html.TextBoxFor(model => model.Email, new { @class = "input", @placeholder = "Mail adresi" })
+
+            </div>
+
+            <div>
+                @Html.PasswordFor(model => model.Password, new { @class = "input", @placeholder = "Şifre" })
+
+            </div>
+
+            <div class="row">
+                <button type="submit" class="button">Kayıt Ol</button>  
+                <a href="@Url.Action("Index","Login")" class="RegisterB">Giriş yap</a>
+            </div>
+
+
+        }
+    </div>
+</body>
+</html>
+

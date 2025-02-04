@@ -1,0 +1,109 @@
+﻿@model ProjeFinal.Models.Processor
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/ManagerPanel/Views/Shared/_LayoutPage1.cshtml";
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="~/Areas/ManagerPanel/Data/Styles/IndexStyle.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body style="background: linear-gradient(to bottom, Black,rgb(15,15,15),rgb(15,15,15),rgb(15,15,15),Black); background-repeat: no-repeat; ">
+    <div class="PagePlace">
+        <div class="ProductPlace">
+
+            @using (Html.BeginForm("Create", "ProcessorFortManager", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+
+                @Html.AntiForgeryToken()
+
+
+                <div class="left">
+                    <div class="row">
+                        @Html.LabelFor(model => model.Category, htmlAttributes: new { @class = "LabelStyle" })
+                        @Html.DropDownList("CategoryID", null, htmlAttributes: new { @class = "form-control" })
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(model => model.Brand, htmlAttributes: new { @class = "LabelStyle" })
+                        @Html.DropDownList("BrandID", null, htmlAttributes: new { @class = "form-control" })
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "LabelStyle" })
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+
+                    <div class="row">
+                        @Html.LabelFor(model => model.stock, htmlAttributes: new { @class = "LabelStyle" })
+                        @Html.EditorFor(model => model.stock, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(model => model.SStock, htmlAttributes: new { @class = "LabelStyle" })
+                        @Html.EditorFor(model => model.SStock, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+
+                    <div class="row">
+                        @Html.LabelFor(model => model.MakximumFrequency, htmlAttributes: new { @class = "LabelStyle" })
+                        @Html.EditorFor(model => model.MakximumFrequency, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(model => model.L3Cache, htmlAttributes: new { @class = "LabelStyle" })
+                        @Html.EditorFor(model => model.L3Cache, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(model => model.L2Cahce, htmlAttributes: new { @class = "LabelStyle" })
+                        @Html.EditorFor(model => model.L2Cahce, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="row">
+                        <input type="file" name="hpf" value="Resmi düzenle" class="InputForImage" />
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(model => model.NumberOfCores, htmlAttributes: new { @class = "LabelStyle" })
+                        @Html.EditorFor(model => model.NumberOfCores, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "LabelStyle" })
+                        @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(model => model.ClockFrequency, htmlAttributes: new { @class = "LabelStyle" })
+                        @Html.EditorFor(model => model.ClockFrequency, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(model => model.BusSpeed, htmlAttributes: new { @class = "LabelStyle" })
+                        @Html.EditorFor(model => model.BusSpeed, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>  <div class="row">
+                        @Html.LabelFor(model => model.ProcessorType, htmlAttributes: new { @class = "LabelStyle" })
+                        @Html.EditorFor(model => model.ProcessorType, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(model => model.ListPrice, htmlAttributes: new { @class = "LabelStyle" })
+                        @Html.EditorFor(model => model.ListPrice, new { htmlAttributes = new { @class = "form-control", @Value = "0" } })
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "LabelStyle" })
+                        @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Ürün Düzenle" class="AddBtn" />
+                    </div>
+                    <div class="row CheckBox">
+                        @Html.EditorFor(model => model.IsActived) Aktif Ürün
+                    </div>
+
+                </div>
+
+                <div style="clear:both"></div>
+                if (ViewBag.error != null)
+                {
+                    <div>
+                        <h2 style=" color: red"> @ViewBag.error</h2>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</body>
+</html>
+

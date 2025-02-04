@@ -1,0 +1,89 @@
+﻿@model IEnumerable<ProjeFinal.Models.Motherboard>
+@{
+    ViewBag.Title = "Index"; Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*background: linear-gradient(to bottom, Black,Black,#5e8cc4, #92d6e5,#4975a8,Black,Black);*@
+<html>
+<head>
+    <link href="~/Content/MainPageStylee.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body style="background: linear-gradient(to bottom,#070711,#fefeff,#090913); ">
+    <div class="ProductImage">
+        <img src="~/MyDataForFinalProject/ASUS-ROG-CROSSHAIR-X870E-HERO-recenze.jpg" />
+    </div>
+    <div class="ProductPage">
+        <div class="kategoriler">
+            <h3> Kategoriler </h3>
+            <a href="@Url.Action("Index","HomePage")">Tüm Ürünlerimiz </a>
+            <a href="@Url.Action("Index","GraphicsCard")" >Grafik Kartları</a>
+            <a href="@Url.Action("Index","Processor")">İşlemciler</a>
+            <a href="@Url.Action("Index","Memory")">RAM</a>
+            <a href="@Url.Action("Index","Motherboard")" class="active">Anakartlar</a>
+            <a href="@Url.Action("Index","Storage")">Depolama</a>
+ 
+        </div>
+        <div class="Background">
+            @foreach (ProjeFinal.Models.Motherboard mth in Model)
+            {
+                if (mth.IsDeleted == false && mth.IsActived == true)
+                {
+
+                    <div class="products">
+                        <a href="@Url.Action("Detail","Motherboard", new {id=mth.ID})" style="text-decoration:none">
+                            <div>
+
+                                <img src="~/MyDataForFinalProject/Photos/@mth.imgs" class="image" />
+
+                            </div>
+                            <div class="name">
+                                <label class="name">@mth.Name</label>
+                            </div>
+                            <div class="price">
+
+                                @if (mth.ListPrice < mth.Price && mth.ListPrice != 0)
+                                {
+                                    <label class="price" style=" box-shadow: 0 1px 0px rgb(76 255 0)">@mth.ListPrice $</label>
+                                    <del>@mth.Price$  </del>
+
+                                }
+                                else
+                                {
+                                    <label class="price">@mth.Price $</label>
+                                }
+                            </div>
+                        </a>
+                        <div class="cart">
+                            <a href="@Url.Action("AddToCart","SCart", new {Pid=mth.ID,typ=mth.GetType().Name.ToString().Split('_')[0],q=1})" style="text-decoration:none" class="DetailButton">
+                                Sepete ekle
+                            </a>
+
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+    <div style="clear:both">   </div>
+    <div class="ContentParent">
+        <div class="content">
+            <div class="footer">
+                © 2025 E/H'nin Tüm Hakları Saklıdır.(İade kabul etmiyoruz Anlayışsızlığınız için teşekkürler)
+            </div>
+            <div class="footer">
+                İletişim 0534 448 21 08(sonu salladım)
+            </div>
+        </div>
+    </div>
+    @*<div class="wrapper">
+
+        <div class="wpimg">
+            <img src="~/MyDataForFinalProject/1255781-3840x1200-desktop-dual-screen-nvidia-background-image.jpg" />
+        </div>
+
+    </div>*@
+
+
+</body>
+</html>
+

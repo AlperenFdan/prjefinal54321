@@ -1,0 +1,105 @@
+﻿@model List<object>
+@{
+    ViewBag.Title = "Index"; Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+<head>
+
+    <link href="~/Content/MainPageStylee.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body style="background: linear-gradient(to bottom, Black, #1A1A1A,#1A1A1A,Black,Black); ">
+
+
+
+    <div class="TableParent" style="margin:auto auto;width:995px;">
+        <div class="TableTop">
+
+        </div>
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            object item = Model[i];
+
+            if ((bool)item.GetType().GetProperty("IsActived").GetValue(item))
+            {
+                int IDForView = (int)item.GetType().GetProperty("ID").GetValue(item);
+
+
+                decimal Price = (decimal)item.GetType().GetProperty("Price").GetValue(item);
+
+
+                string TypeForItem = item.GetType().Name.Split('_')[0]; ;
+                <table class="Table">
+                    <tr>
+
+                        <th>Ürün resmi</th>
+
+                        <th>
+                            Ürün ismi
+                        </th>
+                       
+                        <th>
+                            Ürün fiyatı
+                        </th>
+                        
+
+
+                        <th @*style="border-top: none; border-right:none"*@>Seçenekler</th>
+
+                    </tr>
+                    <tr>
+
+                        <td> <img src="~/MyDataForFinalProject/Photos/@item.GetType().GetProperty("imgs").GetValue(item)" /></td>
+                        <td>
+                            @item.GetType().GetProperty("Name").GetValue(item)
+                        </td>
+
+                      
+
+                        <td>
+                            @Price
+                        </td>
+
+                        <td>
+                            <a href="@Url.Action("Detail",TypeForItem,new {id=IDForView})" class="Edita">Ürüne git</a>
+                            <a href="@Url.Action("Delete","Favroites",new { Pid = IDForView,typ = TypeForItem})" class="Deletea">Sil</a>
+                        </td>
+                    </tr>
+
+
+                </table>
+
+                <div style="clear:both"> </div>
+            }
+        }
+        <div class="TableBottom">
+       
+     
+        </div>
+
+    </div>
+
+
+    <div style="clear:both"> </div>
+    <div class="ContentParent">
+        <div class="content">
+            <div class="footer">
+                © 2025 E/H'nin Tüm Hakları Saklıdır.(İade kabul etmiyoruz Anlayışsızlığınız için teşekkürler)
+            </div>
+            <div class="footer">
+                İletişim 0534 448 21 08(sonu salladım)
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+
+        <div class="wpimg">
+            <img src="~/MyDataForFinalProject/1255781-3840x1200-desktop-dual-screen-nvidia-background-image.jpg" />
+        </div>
+
+    </div>
+
+</body>
+</html>
+

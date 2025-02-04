@@ -1,0 +1,196 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC815F0-1859-4BEE-AB1E-43BD9EB0E278}|EH_Store_Admin\\EH_Store_Admin.csproj|c:\\users\\lastg\\desktop\\prjefinal54321\\eh_store_admin\\eh_store_admin\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{DDC815F0-1859-4BEE-AB1E-43BD9EB0E278}|EH_Store_Admin\\EH_Store_Admin.csproj|solutionrelative:eh_store_admin\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC815F0-1859-4BEE-AB1E-43BD9EB0E278}|EH_Store_Admin\\EH_Store_Admin.csproj|c:\\users\\lastg\\desktop\\prjefinal54321\\eh_store_admin\\eh_store_admin\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DDC815F0-1859-4BEE-AB1E-43BD9EB0E278}|EH_Store_Admin\\EH_Store_Admin.csproj|solutionrelative:eh_store_admin\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC815F0-1859-4BEE-AB1E-43BD9EB0E278}|EH_Store_Admin\\EH_Store_Admin.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\eh_store_admin\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC815F0-1859-4BEE-AB1E-43BD9EB0E278}|EH_Store_Admin\\EH_Store_Admin.csproj|solutionrelative:eh_store_admin\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35BF887C-68B3-4C83-B09F-7EC2BA68CA54}|ADOCOKUGRASTIRIYOR\\ADOCOKUGRASTIRIYOR.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\adocokugrastiriyor\\dataregion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BF887C-68B3-4C83-B09F-7EC2BA68CA54}|ADOCOKUGRASTIRIYOR\\ADOCOKUGRASTIRIYOR.csproj|solutionrelative:adocokugrastiriyor\\dataregion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35BF887C-68B3-4C83-B09F-7EC2BA68CA54}|ADOCOKUGRASTIRIYOR\\ADOCOKUGRASTIRIYOR.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\adocokugrastiriyor\\tier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BF887C-68B3-4C83-B09F-7EC2BA68CA54}|ADOCOKUGRASTIRIYOR\\ADOCOKUGRASTIRIYOR.csproj|solutionrelative:adocokugrastiriyor\\tier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC815F0-1859-4BEE-AB1E-43BD9EB0E278}|EH_Store_Admin\\EH_Store_Admin.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\eh_store_admin\\products.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DDC815F0-1859-4BEE-AB1E-43BD9EB0E278}|EH_Store_Admin\\EH_Store_Admin.csproj|solutionrelative:eh_store_admin\\products.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC815F0-1859-4BEE-AB1E-43BD9EB0E278}|EH_Store_Admin\\EH_Store_Admin.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\eh_store_admin\\viewmodelcik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC815F0-1859-4BEE-AB1E-43BD9EB0E278}|EH_Store_Admin\\EH_Store_Admin.csproj|solutionrelative:eh_store_admin\\viewmodelcik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35BF887C-68B3-4C83-B09F-7EC2BA68CA54}|ADOCOKUGRASTIRIYOR\\ADOCOKUGRASTIRIYOR.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\adocokugrastiriyor\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BF887C-68B3-4C83-B09F-7EC2BA68CA54}|ADOCOKUGRASTIRIYOR\\ADOCOKUGRASTIRIYOR.csproj|solutionrelative:adocokugrastiriyor\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35BF887C-68B3-4C83-B09F-7EC2BA68CA54}|ADOCOKUGRASTIRIYOR\\ADOCOKUGRASTIRIYOR.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\adocokugrastiriyor\\motherboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BF887C-68B3-4C83-B09F-7EC2BA68CA54}|ADOCOKUGRASTIRIYOR\\ADOCOKUGRASTIRIYOR.csproj|solutionrelative:adocokugrastiriyor\\motherboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35BF887C-68B3-4C83-B09F-7EC2BA68CA54}|ADOCOKUGRASTIRIYOR\\ADOCOKUGRASTIRIYOR.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\adocokugrastiriyor\\memory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BF887C-68B3-4C83-B09F-7EC2BA68CA54}|ADOCOKUGRASTIRIYOR\\ADOCOKUGRASTIRIYOR.csproj|solutionrelative:adocokugrastiriyor\\memory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 1355,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Tier.cs",
+              "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\ADOCOKUGRASTIRIYOR\\Tier.cs",
+              "RelativeDocumentMoniker": "ADOCOKUGRASTIRIYOR\\Tier.cs",
+              "ToolTip": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\ADOCOKUGRASTIRIYOR\\Tier.cs",
+              "RelativeToolTip": "ADOCOKUGRASTIRIYOR\\Tier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T19:44:19.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\EH_Store_Admin\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "EH_Store_Admin\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\EH_Store_Admin\\MainWindow.xaml",
+              "RelativeToolTip": "EH_Store_Admin\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-15T13:54:50.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataRegion.cs",
+              "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\ADOCOKUGRASTIRIYOR\\DataRegion.cs",
+              "RelativeDocumentMoniker": "ADOCOKUGRASTIRIYOR\\DataRegion.cs",
+              "ToolTip": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\ADOCOKUGRASTIRIYOR\\DataRegion.cs",
+              "RelativeToolTip": "ADOCOKUGRASTIRIYOR\\DataRegion.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwLABAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T07:00:30.553Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 2322,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\EH_Store_Admin\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "EH_Store_Admin\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\EH_Store_Admin\\MainWindow.xaml.cs",
+              "RelativeToolTip": "EH_Store_Admin\\MainWindow.xaml.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAQwEEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T19:11:18.503Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Products.xml",
+              "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\EH_Store_Admin\\Products.xml",
+              "RelativeDocumentMoniker": "EH_Store_Admin\\Products.xml",
+              "ToolTip": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\EH_Store_Admin\\Products.xml",
+              "RelativeToolTip": "EH_Store_Admin\\Products.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-02-03T00:01:20.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\EH_Store_Admin\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "EH_Store_Admin\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\EH_Store_Admin\\MainWindow.xaml",
+              "RelativeToolTip": "EH_Store_Admin\\MainWindow.xaml",
+              "ViewState": "AgIAAE0EAAAAAAAAAAAkwFQEAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-02T19:33:48.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Store.cs",
+              "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\ADOCOKUGRASTIRIYOR\\Store.cs",
+              "RelativeDocumentMoniker": "ADOCOKUGRASTIRIYOR\\Store.cs",
+              "ToolTip": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\ADOCOKUGRASTIRIYOR\\Store.cs",
+              "RelativeToolTip": "ADOCOKUGRASTIRIYOR\\Store.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T17:37:52.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Motherboard.cs",
+              "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\ADOCOKUGRASTIRIYOR\\Motherboard.cs",
+              "RelativeDocumentMoniker": "ADOCOKUGRASTIRIYOR\\Motherboard.cs",
+              "ToolTip": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\ADOCOKUGRASTIRIYOR\\Motherboard.cs",
+              "RelativeToolTip": "ADOCOKUGRASTIRIYOR\\Motherboard.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T11:13:37.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Memory.cs",
+              "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\ADOCOKUGRASTIRIYOR\\Memory.cs",
+              "RelativeDocumentMoniker": "ADOCOKUGRASTIRIYOR\\Memory.cs",
+              "ToolTip": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\ADOCOKUGRASTIRIYOR\\Memory.cs",
+              "RelativeToolTip": "ADOCOKUGRASTIRIYOR\\Memory.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAzwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T02:24:09.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ViewModelcik.cs",
+              "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\EH_Store_Admin\\ViewModelcik.cs",
+              "RelativeDocumentMoniker": "EH_Store_Admin\\ViewModelcik.cs",
+              "ToolTip": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\EH_Store_Admin\\EH_Store_Admin\\ViewModelcik.cs",
+              "RelativeToolTip": "EH_Store_Admin\\ViewModelcik.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T12:57:11.518Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

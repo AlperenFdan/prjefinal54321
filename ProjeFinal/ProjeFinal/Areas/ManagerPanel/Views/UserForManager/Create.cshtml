@@ -1,0 +1,73 @@
+﻿@model ProjeFinal.Models.Users
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/ManagerPanel/Views/Shared/_LayoutPage1.cshtml";
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="~/Areas/ManagerPanel/Data/Styles/IndexStyle.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body style="background: linear-gradient(to bottom, Black,rgb(15,15,15),rgb(15,15,15),rgb(15,15,15),Black); background-repeat: no-repeat; ">
+    <div class="PagePlace">
+        <div class="ProductPlace">
+
+            @using (Html.BeginForm("Create", "UserForManager", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+
+                @Html.AntiForgeryToken()
+
+
+
+                <div class="left">
+
+
+                    <div class="row">
+                        @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "LabelStyle" })
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+
+                    <div class="row">
+                        @Html.LabelFor(model => model.SurnName, htmlAttributes: new { @class = "LabelStyle" })
+                        @Html.EditorFor(model => model.SurnName, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "LabelStyle" })
+                        @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+
+
+                </div>
+                <div class="right">
+
+                    <div class="row">
+                        @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "LabelStyle" })
+                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "LabelStyle" })
+                        @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+
+                    <div class="row">
+                        <input type="submit" value="Kullanıcı Ekle" class="AddBtn" />
+                    </div>
+                    <div class="row CheckBox">
+                        @Html.EditorFor(model => model.IsActive) Aktif Kullanıcı
+                    </div>
+
+                </div>
+
+                <div style="clear:both"></div>
+                if (ViewBag.error != null)
+                {
+                    <div>
+                        <h2 style=" color: red"> @ViewBag.error</h2>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</body>
+</html>
+

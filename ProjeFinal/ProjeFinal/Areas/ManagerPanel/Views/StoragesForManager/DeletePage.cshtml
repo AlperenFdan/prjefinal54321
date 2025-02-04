@@ -1,0 +1,103 @@
+﻿@model ProjeFinal.Models.Storage
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Areas/ManagerPanel/Views/Shared/_LayoutPage1.cshtml";
+
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="~/Areas/ManagerPanel/Data/Styles/IndexStyle.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body style="background: linear-gradient(to bottom, Black,#5e8cc4, #92d6e5,#4975a8,Black);">
+
+    @using (Html.BeginForm("DeletePage", "StoragesForManager", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <div class="ProductPage">
+            <div class="ProductImage">
+                <img src="~/MyDataForFinalProject/Photos/@Model.imgs" />
+
+            </div>
+
+            <div class="ProductSafeArea">
+                <div class="ProductNameArea">
+                    <Span class="PorpH" style="font-family: Calibri">@Model.Name</Span>
+                </div>
+                <div class="ProductDescriptionArea">
+                    <label class="ProductDescription">@Model.Description</label>
+                </div>
+
+                <div class="ProductPriceArea">
+                    @if (Model.ListPrice < Model.Price && Model.ListPrice != 0)
+                    {
+                        <label class="ProductPrice">@Model.ListPrice$  </label>
+                        <del class="ProductPrice">@Model.Price $ </del>
+
+                    }
+                    else
+                    {
+                        <label class="ProductPrice">@Model.Price $</label>
+                    }
+                </div>
+                <div class="ProductStockArea">
+                    <label class="ProductStock">Mevcut stok: @Model.stock Adet</label>
+                </div>
+                <div class="AddToCart">
+
+                    <input type="submit" name="DeleteProduct" value="Ürünü Sil" />
+
+                </div>
+
+            </div>
+            <div style="clear:both"></div>
+            <div class="ProductProp">
+                <div class="PropCanvasS"> <span class="PorpH">Özellikler</span> </div>
+                <div class="PropCanvas">
+                    <div class="PropName">Ürün Kapestesi: </div>
+                    <div class="PropValue"> @Model.StorageCapacity</div>
+
+                    <div class="PropNameR">Ürün Uyumlu Bağlantısı: </div>
+                    <div class="PropValueR"> @Model.connections</div>
+
+                    <div style="clear:both"></div>
+
+                    <div class="PropName">Ürün Yazma hızı:  </div>
+                    <div class="PropValue"> @Model.SequentialWriting</div>
+
+                    <div class="PropNameR">Ürün Okuma hızı: </div>
+                    <div class="PropValueR">@Model.SequentialReading</div>
+
+                    <div style="clear:both"></div>
+
+                    <div class="PropName">Ürün Uzunluk: </div>
+                    <div class="PropValue"> @Model.Height</div>
+
+                    <div class="PropNameR">Ürün Genişlik:  </div>
+                    <div class="PropValueR"> @Model.Width</div>
+
+                    <div style="clear:both"></div>
+
+                    <div class="PropName"> Ürün Markası: </div>
+                    <div class="PropValue"> @Model.Brand.Name</div>
+
+                    <div class="PropNameR">Ürün Kategori:  </div>
+                    <div class="PropValueR"> @Model.Category.Name</div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="ContentParent">
+            <div class="content">
+                <div class="footer">
+                    © 2025 E/H'nin Tüm Hakları Saklıdır.(İade kabul etmiyoruz Anlayışsızlığınız için teşekkürler)
+                </div>
+                <div class="footer">
+                    İletişim 0534 448 21 08(sonu salladım)
+                </div>
+            </div>
+        </div>
+    }
+</body>
+</html>

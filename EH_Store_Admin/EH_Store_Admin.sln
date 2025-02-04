@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35514.174
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EH_Store_Admin", "EH_Store_Admin\EH_Store_Admin.csproj", "{DDC815F0-1859-4BEE-AB1E-43BD9EB0E278}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADOCOKUGRASTIRIYOR", "ADOCOKUGRASTIRIYOR\ADOCOKUGRASTIRIYOR.csproj", "{35BF887C-68B3-4C83-B09F-7EC2BA68CA54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDC815F0-1859-4BEE-AB1E-43BD9EB0E278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDC815F0-1859-4BEE-AB1E-43BD9EB0E278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDC815F0-1859-4BEE-AB1E-43BD9EB0E278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDC815F0-1859-4BEE-AB1E-43BD9EB0E278}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35BF887C-68B3-4C83-B09F-7EC2BA68CA54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35BF887C-68B3-4C83-B09F-7EC2BA68CA54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35BF887C-68B3-4C83-B09F-7EC2BA68CA54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35BF887C-68B3-4C83-B09F-7EC2BA68CA54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B2B200F-F57B-4440-9977-AF18B29EDCD7}
+	EndGlobalSection
+EndGlobal

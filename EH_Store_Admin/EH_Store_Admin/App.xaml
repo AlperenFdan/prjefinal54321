@@ -1,0 +1,13 @@
+﻿<Application x:Class="EH_Store_Admin.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:EH_Store_Admin"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Storyboard x:Key="MyFadeOutStoryboard">
+            <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                    From="1" To="0"
+                    Duration="0:0:2" />
+        </Storyboard>
+    </Application.Resources>
+</Application>

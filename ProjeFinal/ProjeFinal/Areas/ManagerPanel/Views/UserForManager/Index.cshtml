@@ -1,0 +1,110 @@
+﻿@model IEnumerable<ProjeFinal.Models.Users>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/ManagerPanel/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="~/Areas/ManagerPanel/Data/Styles/IndexStyle.css" rel="stylesheet" />
+</head>
+<body style="background: linear-gradient(to bottom, Black,rgb(15,15,15),rgb(15,15,15),rgb(15,15,15),Black); background-repeat: no-repeat; ">
+    <div class="TableParent" style="margin-left:400px;">
+        <div class="TableTop">
+            <a href="@Url.Action("Create","UserForManager")" class="AddButton">Kullanıcı ekle</a>
+        </div>
+        <table class="Table">
+            <tr>
+
+                <th>Kullanıcı No</th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.UserName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                   Aktif kullanıcı
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SignUpTime)
+                </th>
+
+                <th @*style="border-top: none; border-right:none"*@>Seçenekler</th>
+
+            </tr>
+            @foreach (var item in Model)
+            {
+                if (item.IsActive)
+                {
+                    <tr >
+
+                        <td>@item.ID</td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.UserName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+
+                        <td>
+
+                            <label>Aktif</label>
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SignUpTime)
+                        </td>
+                        <td>
+                            <a href="@Url.Action("Edit","UserForManager",new {id=item.ID})" class="Edita">Düzenle</a>
+                            <a href="@Url.Action("DeletePage","UserForManager",new {id=item.ID})" class="Deletea">Sil</a>
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    <tr style="background-color:#ffdede">
+
+                        <td>@item.ID</td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.UserName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+
+                        <td>
+
+                            <label>Pasif</label>
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SignUpTime)
+                        </td>
+                        
+                        <td>
+                            <a href="@Url.Action("Edit","UserForManager",new {id=item.ID})" class="Edita">Düzenle</a>
+                            <a href="@Url.Action("DeletePage","UserForManager",new {id=item.ID})" class="Deletea">Sil</a>
+                        </td>
+                    </tr>
+                }
+
+            }
+        </table>
+        <div class="TableBottom">
+
+        </div>
+    </div>
+
+</body>
+</html>
+

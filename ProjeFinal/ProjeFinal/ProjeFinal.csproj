@@ -1,0 +1,308 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjeFinal</RootNamespace>
+    <AssemblyName>ProjeFinal</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44312</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\ManagerPanel\Data\business-manager-icon-vector-21023585.jpg" />
+    <Content Include="Areas\ManagerPanel\Data\images-Photoroom.png" />
+    <Content Include="Areas\ManagerPanel\Data\istockphoto-1055020934-612x612-Photoroom.png" />
+    <Content Include="Areas\ManagerPanel\Data\istockphoto-1055020934-612x612.jpg" />
+    <Content Include="Areas\ManagerPanel\Data\SepetIco.png" />
+    <Content Include="Areas\ManagerPanel\Data\LogoEHupifey - Kopya.png" />
+    <Content Include="Areas\ManagerPanel\Data\file.png" />
+    <Content Include="Areas\ManagerPanel\Data\Styles\IndexStyle.css" />
+    <Content Include="Areas\ManagerPanel\Data\Styles\LayoutMscss.css" />
+    <Content Include="Areas\ManagerPanel\Data\Styles\ManagerHomeStyle.css" />
+    <Content Include="Areas\ManagerPanel\Data\Styles\MangerLogin.css" />
+    <Content Include="Content\DetailProductStyle.css" />
+    <Content Include="Content\LayoutStyle.css" />
+    <Content Include="Content\MainPageStylee.css" />
+    <Content Include="Content\Pictures\104234.jpg" />
+    <Content Include="Content\Pictures\14542.jpg" />
+    <Content Include="Content\Pictures\3d-render-low-poly-plexus-design-network-communications.jpg" />
+    <Content Include="Content\Pictures\LayoutImage.jpeg" />
+    <Content Include="Content\Pictures\motherboard-circuit-background.jpg" />
+    <Content Include="Content\Pictures\sBackgorund1.png" />
+    <Content Include="Content\Pictures\smart-microchip-background-motherboard-closeup-technology.jpg" />
+    <Content Include="Global.asax" />
+    <Content Include="Models\StoreInformation.xml" />
+    <Content Include="MyDataForFinalProject\1255781-3840x1200-desktop-dual-screen-nvidia-background-image.jpg" />
+    <Content Include="MyDataForFinalProject\60219.png" />
+    <Content Include="MyDataForFinalProject\980 PRO_kv %281%29.jpg" />
+    <Content Include="MyDataForFinalProject\ASUS-ROG-CROSSHAIR-X870E-HERO-recenze.jpg" />
+    <Content Include="MyDataForFinalProject\ManagerPanelBackgorund.jpg" />
+    <Content Include="MyDataForFinalProject\crucial-DDR5-pro-overclocking-mobile-image.jpg" />
+    <Content Include="MyDataForFinalProject\intel-xeon-gaudi-banner-desk.jpg" />
+    <Content Include="MyDataForFinalProject\maxresdefault.jpg" />
+    <Content Include="MyDataForFinalProject\Photos\09143c7d-7968-4f69-96eb-6afd01ff230a.png" />
+    <Content Include="MyDataForFinalProject\Photos\5c98b2f4-eb2b-45cb-971c-ee36f9c0241b.png" />
+    <Content Include="MyDataForFinalProject\Photos\5dfd9977-91db-4d83-81dc-4a8e04f4efe6.png" />
+    <Content Include="MyDataForFinalProject\Photos\60876fe1-f60a-460c-9551-a9d304f9a53a.png" />
+    <Content Include="MyDataForFinalProject\Photos\7294aa8c-5fc4-4994-8f1f-ce2346dc1f48.png" />
+    <Content Include="MyDataForFinalProject\Photos\7d69606b-715a-4faa-aae3-3cff6a0c8a0d.png" />
+    <Content Include="MyDataForFinalProject\Photos\83158fa5-e596-453a-8cc7-c4021a5952eb.png" />
+    <Content Include="MyDataForFinalProject\Photos\8d786a0d-da4b-407f-9b69-1b8e7d3d97d3.png" />
+    <Content Include="MyDataForFinalProject\Photos\911fb583-8934-462b-a8f0-82b2b5dc5498.png" />
+    <Content Include="MyDataForFinalProject\Photos\9dbcea94-0f6c-47fa-9cbf-7480a09d6368.png" />
+    <Content Include="MyDataForFinalProject\Photos\ad323347-f612-4ae6-8dae-14e98cc6542a.png" />
+    <Content Include="MyDataForFinalProject\Photos\af27a082-19f7-4b4d-be40-1cc350708e4f.png" />
+    <Content Include="MyDataForFinalProject\Photos\b306ff6f-559e-4f13-bc6e-bfd9ca73f25a.png" />
+    <Content Include="MyDataForFinalProject\Photos\b64577d3-14c0-45cf-a1c9-e7c46c4909fb.png" />
+    <Content Include="MyDataForFinalProject\Photos\b9184e4c-d0e4-4c1c-94b9-0e3b4c194e6f.png" />
+    <Content Include="MyDataForFinalProject\Photos\c1996ec4-c322-4e8c-a81a-347821c08b05.png" />
+    <Content Include="MyDataForFinalProject\c5a84ffd86c6233b2fc06726725d9e3a %282%29.jpg" />
+    <Content Include="MyDataForFinalProject\Photos\c6e3aaef-9c8b-48f7-aa84-516e32fc9633.png" />
+    <Content Include="MyDataForFinalProject\Photos\eaa6b27d-b45b-49aa-b299-37681b4342ff.png" />
+    <Content Include="MyDataForFinalProject\Photos\f0b5b81c-aec1-4296-bc9e-854ddc09b959.png" />
+    <Content Include="MyDataForFinalProject\Photos\f3d3cfcb-cf60-40b3-a5f6-8b038366da30.png" />
+    <Content Include="MyDataForFinalProject\jyov6z6qZvtMFXugUScFfG.jpg" />
+    <Content Include="MyHelpers\60993.png" />
+    <Content Include="MyHelpers\images %281%29-Photoroom.png" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\ManagerPanel\Controllers\BrandForManagerController.cs" />
+    <Compile Include="Areas\ManagerPanel\Controllers\CategoryForManagerController.cs" />
+    <Compile Include="Areas\ManagerPanel\Controllers\GraphicsCardForMangerController.cs" />
+    <Compile Include="Areas\ManagerPanel\Controllers\MangerHomeController.cs" />
+    <Compile Include="Areas\ManagerPanel\Controllers\MemoryForManagerController.cs" />
+    <Compile Include="Areas\ManagerPanel\Controllers\MotherboardForMangerController.cs" />
+    <Compile Include="Areas\ManagerPanel\Controllers\ProcessorFortManagerController.cs" />
+    <Compile Include="Areas\ManagerPanel\Controllers\StoragesForManagerController.cs" />
+    <Compile Include="Areas\ManagerPanel\Controllers\UserForManagerController.cs" />
+    <Compile Include="Areas\ManagerPanel\Data\ViewModelForMangerLogin.cs" />
+    <Compile Include="Areas\ManagerPanel\ManagerPanelAreaRegistration.cs" />
+    <Compile Include="Areas\ManagerPanel\MyAttributes\MangerLoginControlAttribute.cs" />
+    <Compile Include="Areas\ManagerPanel\MyAttributes\UserLoginControlAttribute.cs" />
+    <Compile Include="Controllers\FavroitesController.cs" />
+    <Compile Include="Controllers\HomePageController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\MemoryController.cs" />
+    <Compile Include="Controllers\MotherboardController.cs" />
+    <Compile Include="Controllers\ProcessorController.cs" />
+    <Compile Include="Controllers\GraphicsCardController.cs" />
+    <Compile Include="Controllers\SCartController.cs" />
+    <Compile Include="Controllers\StorageController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Brand.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\EH_Store.cs" />
+    <Compile Include="Models\Emp.cs" />
+    <Compile Include="Models\Favorites.cs" />
+    <Compile Include="Models\GraphicsCard.cs" />
+    <Compile Include="Models\Memory.cs" />
+    <Compile Include="Models\Motherboard.cs" />
+    <Compile Include="Models\Processor.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\SCart.cs" />
+    <Compile Include="Models\Storage.cs" />
+    <Compile Include="Models\Users.cs" />
+    <Compile Include="MyHelpers\Mylib.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="Areas\ManagerPanel\Views\web.config" />
+    <Content Include="Areas\ManagerPanel\Views\Shared\_LayoutPage1.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\MangerHome\Index.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\MangerHome\Home.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\GraphicsCardForManger\Index.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\GraphicsCardForManger\Edit.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\GraphicsCardForManger\Create.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\ProcessorFortManager\Index.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\ProcessorFortManager\Edit.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\ProcessorFortManager\Create.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\MemoryForManager\Edit.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\MemoryForManager\Create.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\MemoryForManager\Index.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\GraphicsCardForManger\DeletePage.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\MemoryForManager\DeletePage.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\ProcessorFortManager\DeletePage.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\MotherboardForManger\Index.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\MotherboardForManger\Edit.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\MotherboardForManger\Create.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\MotherboardForManger\DeletePage.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\StoragesForManager\Index.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\StoragesForManager\Edit.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\StoragesForManager\Create.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\StoragesForManager\DeletePage.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\BrandForManager\Index.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\BrandForManager\Edit.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\BrandForManager\Create.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\BrandForManager\DeletePage.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\CategoryForManager\Index.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\CategoryForManager\Edit.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\CategoryForManager\Create.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\CategoryForManager\DeletePage.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\UserForManager\Index.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\UserForManager\Edit.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\UserForManager\Create.cshtml" />
+    <Content Include="Areas\ManagerPanel\Views\UserForManager\DeletePage.cshtml" />
+    <None Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\HomePage\Index.cshtml" />
+    <Content Include="Views\GraphicsCard\Detail.cshtml" />
+    <Content Include="Views\Processor\Index.cshtml" />
+    <Content Include="Views\Processor\Detail.cshtml" />
+    <Content Include="Views\GraphicsCard\Index.cshtml" />
+    <Content Include="Views\Storage\Index.cshtml" />
+    <Content Include="Views\Storage\Detail.cshtml" />
+    <Content Include="Views\Memory\Index.cshtml" />
+    <Content Include="Views\Memory\Detail.cshtml" />
+    <Content Include="Views\Motherboard\Index.cshtml" />
+    <Content Include="Views\Motherboard\Detail.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\SCart\Index.cshtml" />
+    <Content Include="Views\Favroites\Index.cshtml" />
+    <Content Include="Views\Login\Create.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61379</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44312/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

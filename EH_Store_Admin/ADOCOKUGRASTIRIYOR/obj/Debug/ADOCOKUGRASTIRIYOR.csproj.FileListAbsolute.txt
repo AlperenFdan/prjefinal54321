@@ -1,0 +1,6 @@
+C:\Users\lastg\Desktop\EH_Store_Admin\ADOCOKUGRASTIRIYOR\bin\Debug\ADOCOKUGRASTIRIYOR.dll
+C:\Users\lastg\Desktop\EH_Store_Admin\ADOCOKUGRASTIRIYOR\bin\Debug\ADOCOKUGRASTIRIYOR.pdb
+C:\Users\lastg\Desktop\EH_Store_Admin\ADOCOKUGRASTIRIYOR\obj\Debug\ADOCOKUGRASTIRIYOR.csproj.AssemblyReference.cache
+C:\Users\lastg\Desktop\EH_Store_Admin\ADOCOKUGRASTIRIYOR\obj\Debug\ADOCOKUGRASTIRIYOR.csproj.CoreCompileInputs.cache
+C:\Users\lastg\Desktop\EH_Store_Admin\ADOCOKUGRASTIRIYOR\obj\Debug\ADOCOKUGRASTIRIYOR.dll
+C:\Users\lastg\Desktop\EH_Store_Admin\ADOCOKUGRASTIRIYOR\obj\Debug\ADOCOKUGRASTIRIYOR.pdb

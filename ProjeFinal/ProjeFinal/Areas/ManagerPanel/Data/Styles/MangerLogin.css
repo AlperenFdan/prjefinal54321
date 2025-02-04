@@ -1,0 +1,110 @@
+﻿body {
+
+    background-image: url('../../../../mydataforfinalproject/c5a84ffd86c6233b2fc06726725d9e3a (2).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.LoginPanelCnavas {
+    box-shadow: 0px 4px 8px rgba(255,255, 255, 1);
+    border: 1px solid rgba(15, 15, 15, 0.1);
+    background-color: rgba(255,255,255,0.9);
+    margin: 12% auto;
+    height: 500px;
+    width: 500px;
+    border-radius: 15px;
+}
+    .LoginPlace {
+        padding-top: -80px;
+        width: 500px;
+        height: auto;
+    }
+    .LoginPanelCnavas .imga{
+        padding-top:20px;
+        text-align:center;
+    }
+    .LoginPanelCnavas .imga img{
+        width:90px;
+        height:110px;
+        object-fit:contain;
+    }
+    
+.input {
+    margin-top: 25px;
+    background-color: #EFEFEF;
+    width: 300px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 15px 7px;
+    border: 1px solid Black;
+    margin-left: 100px;
+    border-radius: 10px;
+ 
+}
+    .input:focus {
+        outline: none;
+    }
+
+
+.RegisterB {
+    text-decoration: none;
+    color: black;
+    margin-top: 25px;
+    margin-left: 10px;
+    font-size: 18px;
+    padding: 12px;
+    background-color: black;
+    transition: all 0.3s ease;
+    color: white;
+    border-radius: 15px;
+    float: left;
+}
+    .RegisterB:hover {
+        background-color: white;
+        color: rgba(0,0,0,1);
+        box-shadow: 0px 2px 8px Black;
+    }
+.button {
+    float: left;
+    margin-top: 25px;
+    background-color: black;
+    width: 200px;
+    color: rgba(255,255,255,1);
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    margin-left: 105px;
+    transition: all 0.3s ease;
+}
+    .button:hover {
+        background-color: white;
+        color: rgba(0,0,0,1);
+        box-shadow: 0px 2px 8px Black;
+    }
+.validation-summary-errors {
+    margin-left:90px;
+    width:300px;
+    text-align:center;
+    margin-top: 30px;
+    padding: 1px;
+    background-color: #f52f2f;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid rgba(15, 15, 15, 1);
+    font-weight: 900;
+}
+    .validation-summary-errors div {
+  
+       
+        border-radius: 5px;
+    }
+
+    .validation-summary-errors ul {
+        list-style-type: none;
+    }
+
+        .validation-summary-errors ul li {
+            margin-left:-40px;
+         
+            margin-bottom: 5px;
+        }

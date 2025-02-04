@@ -1,0 +1,85 @@
+﻿body {
+    display:flex;
+}
+.Canvas{
+    border: 1px solid rgba(255,255,255,0.4);
+    height:99.84vh;
+    width:300px;
+    background-color:transparent;
+}
+.Title{
+    margin-top:80px;
+    padding:30px 0px;
+    width:100%;
+    height:20px;
+    text-align:center
+}
+    .Title a {
+        text-decoration:none;
+        font-family:Calibri;
+        padding:40px;
+        font-size:28px;
+        color:white;
+    }
+.Profile {
+/*    background-color: rgba(0,0,0,0.7); */
+    border-radius: 15px;
+    
+    height: 200px;
+    width: 98%;
+    text-align: center;
+}
+    .Profile .Picture {
+
+    }
+        .Profile .Picture img {
+            height: 150px;
+            width: 200px;
+            object-fit: contain;
+        }
+
+.namePlace{
+    color:white;
+}
+.Settings{
+
+}
+.SettingsForProduct {
+    margin-top: 10px;
+    float: left;
+    height: auto;
+    width: 280px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.9);
+    padding-bottom: 10px;
+}
+    .SettingsForProduct h2{
+        margin-top:15px;
+        margin-bottom: -1px;
+        font-family:Calibri;
+        font-size:18px;
+        color:rgba(0,0,0,0.7);
+        text-align:center
+    }
+    .SettingsForProduct a {
+        
+        border: 1px solid rgba(0,0,0,0.3);
+        float: left;
+        width: 170px;
+        text-decoration: none;
+        color: #555;
+        font-size: 16px;
+        margin: 10px 45px;
+        padding: 6px 12px;
+        text-align:center;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.1);
+    }
+        .SettingsForProduct a:hover {
+            background-color: white;
+            color: black;
+            border: 1px solid rgba(0,0,0,0.8);
+            box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.7);
+        }

@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Products Version="7">
+  <TotalPrice>
+    <Price>0</Price>
+  </TotalPrice>
+  <TotalPrice>
+    <Price>0</Price>
+  </TotalPrice>
+  <TotalPrice>
+    <Price>0</Price>
+  </TotalPrice>
+  <Product Type="GraphicsCard" id="2005">
+    <Name>RTX 4090</Name>
+    <Price>1700.00</Price>
+    <ListPrice>0.00</ListPrice>
+    <BrandName>Asus</BrandName>
+    <CategoryName>Graphics Card</CategoryName>
+    <Description>GPU</Description>
+    <stock>1</stock>
+    <SStock>1</SStock>
+    <imgs>51343d06-805a-4e10-99fb-75e76e5aacca.png</imgs>
+    <VRAM>32</VRAM>
+    <Series>40</Series>
+    <bitnumber>256</bitnumber>
+    <CompatibleConnect>PCIExpress 4.0</CompatibleConnect>
+    <Connects>HDMI, DP</Connects>
+    <StorgeType>GDDR5</StorgeType>
+    <IsActived>true</IsActived>
+    <IsDeleted>false</IsDeleted>
+    <CreationTime>2025-02-03T07:16:24.393</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="GraphicsCard" id="2006">
+    <Name>RTX 4080</Name>
+    <Price>500.00</Price>
+    <ListPrice>0.00</ListPrice>
+    <BrandName>Nvidia</BrandName>
+    <CategoryName>Graphics Card</CategoryName>
+    <Description>gpu</Description>
+    <stock>1</stock>
+    <SStock>1</SStock>
+    <imgs>6575140a-ef8b-47a1-8698-ee2407a111ce.png</imgs>
+    <VRAM>24</VRAM>
+    <Series>40</Series>
+    <bitnumber>128</bitnumber>
+    <CompatibleConnect>PCIExpress 4.0</CompatibleConnect>
+    <Connects>HDMI, DP</Connects>
+    <StorgeType>GDDR4</StorgeType>
+    <IsActived>true</IsActived>
+    <IsDeleted>false</IsDeleted>
+    <CreationTime>2025-02-03T07:43:18.2</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="GraphicsCard" id="2007">
+    <Name>RTX 3090</Name>
+    <Price>700.00</Price>
+    <ListPrice>0.00</ListPrice>
+    <BrandName>Zotac</BrandName>
+    <CategoryName>Graphics Card</CategoryName>
+    <Description>GPU</Description>
+    <stock>1</stock>
+    <SStock>1</SStock>
+    <imgs>efc511de-6979-4ba8-bca0-efb63108fa69.png</imgs>
+    <VRAM>24</VRAM>
+    <Series>30</Series>
+    <bitnumber>526</bitnumber>
+    <CompatibleConnect>PCIExpress 4.0</CompatibleConnect>
+    <Connects>HDMI,DP</Connects>
+    <StorgeType>GDDR5</StorgeType>
+    <IsActived>true</IsActived>
+    <IsDeleted>false</IsDeleted>
+    <CreationTime>2025-02-04T18:33:51.42</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="Brand" id="1">
+    <Name>Nvidia</Name>
+    <Description>GPU!</Description>
+    <IsActive>true</IsActive>
+    <IsDeleted>false</IsDeleted>
+    <CreationTime>2025-01-21T00:16:12.967</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="Brand" id="2">
+    <Name>Intel</Name>
+    <Description>CPU!&amp;gpu</Description>
+    <IsActive>true</IsActive>
+    <IsDeleted>false</IsDeleted>
+    <CreationTime>2025-01-21T14:37:46.61</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="Brand" id="3">
+    <Name>AMD</Name>
+    <Description>cpu&amp;gpu</Description>
+    <IsActive>true</IsActive>
+    <IsDeleted>false</IsDeleted>
+    <CreationTime>2025-01-21T14:37:56.863</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="Brand" id="4">
+    <Name>Gigabyte</Name>
+    <Description>GIGABYTEEEE!</Description>
+    <IsActive>true</IsActive>
+    <IsDeleted>false</IsDeleted>
+    <CreationTime>2025-01-21T14:38:38.02</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="Brand" id="5">
+    <Name>Asus</Name>
+    <Description>No need for words</Description>
+    <IsActive>true</IsActive>
+    <IsDeleted>false</IsDeleted>
+    <CreationTime>2025-01-21T14:39:10.793</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="Brand" id="6">
+    <Name>ROG X EVANGELION</Name>
+    <Description>I'D GIVE MY ALL TO HAVEEEEEEEE JUST 1 MORE NIGHTTTT WITH YOU!</Description>
+    <IsActive>true</IsActive>
+    <IsDeleted>false</IsDeleted>
+    <CreationTime>2025-01-21T14:39:35.853</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="Brand" id="7">
+    <Name>Samsung</Name>
+    <Description>Sweet!</Description>
+    <IsActive>true</IsActive>
+    <IsDeleted>false</IsDeleted>
+    <CreationTime>2025-01-21T14:43:33.697</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="Brand" id="8">
+    <Name>Another Brand</Name>
+    <Description>brand</Description>
+    <IsActive>true</IsActive>
+    <IsDeleted>false</IsDeleted>
+    <CreationTime>2025-01-21T14:43:58.8</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="Brand" id="9">
+    <Name>MSI</Name>
+    <Description>MSI!</Description>
+    <IsActive>true</IsActive>
+    <IsDeleted>false</IsDeleted>
+    <CreationTime>2025-01-21T15:27:59.843</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="Brand" id="10">
+    <Name>Zotac</Name>
+    <Description>WHAT IS LOVE BYB DONT HURT ME!</Description>
+    <IsActive>true</IsActive>
+    <IsDeleted>false</IsDeleted>
+    <CreationTime>2025-01-21T17:55:04.427</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="Brand" id="1005">
+    <Name>Kingston</Name>
+    <Description>Ew(I don't know about this, what is this?)</Description>
+    <IsActive>true</IsActive>
+    <IsDeleted>false</IsDeleted>
+    <CreationTime>2025-01-22T01:11:57.79</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="Brand" id="1006">
+    <Name>Crucial </Name>
+    <Description>Sweet</Description>
+    <IsActive>true</IsActive>
+    <IsDeleted>false</IsDeleted>
+    <CreationTime>2025-01-22T01:26:14.57</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="Brand" id="1007">
+    <Name>Corsair </Name>
+    <Description>Corsair </Description>
+    <IsActive>true</IsActive>
+    <IsDeleted>false</IsDeleted>
+    <CreationTime>2025-01-22T04:58:40.197</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="Brand" id="1008">
+    <Name>FURY</Name>
+    <Description>FURY</Description>
+    <IsActive>true</IsActive>
+    <IsDeleted>false</IsDeleted>
+    <CreationTime>2025-01-22T04:59:53.823</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="Brand" id="1009">
+    <Name>XPG</Name>
+    <Description>XPG</Description>
+    <IsActive>true</IsActive>
+    <IsDeleted>false</IsDeleted>
+    <CreationTime>2025-01-22T05:01:20.583</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="Brand" id="1010">
+    <Name>Patirot</Name>
+    <Description>Patriot</Description>
+    <IsActive>true</IsActive>
+    <IsDeleted>false</IsDeleted>
+    <CreationTime>2025-01-22T05:30:41.687</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="Category" id="1">
+    <Name>Memory</Name>
+    <Description>Memory For PC</Description>
+    <IsDeleted>false</IsDeleted>
+    <IsActive>true</IsActive>
+    <CreationTime>2025-01-21T00:16:59.31</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="Category" id="2">
+    <Name>Motherboard</Name>
+    <Description>motherboard</Description>
+    <IsDeleted>false</IsDeleted>
+    <IsActive>true</IsActive>
+    <CreationTime>2025-01-21T02:27:44.337</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="Category" id="4">
+    <Name>Storage</Name>
+    <Description>Storage</Description>
+    <IsDeleted>false</IsDeleted>
+    <IsActive>true</IsActive>
+    <CreationTime>2025-01-21T14:35:21.873</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="Category" id="5">
+    <Name>Graphics Card</Name>
+    <Description>For PC</Description>
+    <IsDeleted>false</IsDeleted>
+    <IsActive>false</IsActive>
+    <CreationTime>2025-01-21T14:35:43.617</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="Category" id="6">
+    <Name>Processor</Name>
+    <Description>For PC</Description>
+    <IsDeleted>false</IsDeleted>
+    <IsActive>false</IsActive>
+    <CreationTime>2025-01-21T14:36:02.127</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="Category" id="7">
+    <Name>Storage</Name>
+    <Description>For PC &amp; Laptop</Description>
+    <IsDeleted>false</IsDeleted>
+    <IsActive>false</IsActive>
+    <CreationTime>2025-01-21T14:36:27.687</CreationTime>
+    <IsItReadOnly>false</IsItReadOnly>
+  </Product>
+  <Product Type="Processor" id="1002">
+    <Name>Intel Core i9 14700k</Name>
+    <Price>450.00</Price>
+    <ListPrice>0.00</ListPrice>
+    <BrandName>Intel</BrandName>
+    <CategoryName>Processor</CategoryName>
+    <Description>CPU</Description>
+    <stock>10</stock>
+    <SStock>1</SStock>
+    <imgs>9ec1c9b2-09de-4455-9214-fb0eec38b143.jpg</imgs>
+    <MakximumFrequency>6</MakximumFrequency>
+    <L3Cache>32</L3Cache>
+    <L2Cahce>24</L2Cahce>
+    <NumberOfCores>8</NumberOfCores>
+    <ClockFrequency>3</ClockFrequency>
+    <BusSpeed>4.5</BusSpeed>
+    <ProcessorType>Core i9 14700k</ProcessorType>
+    <IsItReadOnly>false</IsItReadOnly>
+    <IsActived>true</IsActived>
+    <IsDeleted>false</IsDeleted>
+    <CreationTime>2025-02-04T17:52:18.703</CreationTime>
+  </Product>
+  <Product Type="Processor" id="1003">
+    <Name>Intel core i7 14700k</Name>
+    <Price>350.00</Price>
+    <ListPrice>0.00</ListPrice>
+    <BrandName>Intel</BrandName>
+    <CategoryName>Processor</CategoryName>
+    <Description>CPU</Description>
+    <stock>10</stock>
+    <SStock>1</SStock>
+    <imgs>c6441da0-031b-45ed-b979-9fb0b841c0b3.jpg</imgs>
+    <MakximumFrequency>6</MakximumFrequency>
+    <L3Cache>28</L3Cache>
+    <L2Cahce>22</L2Cahce>
+    <NumberOfCores>8</NumberOfCores>
+    <ClockFrequency>3</ClockFrequency>
+    <BusSpeed>4.5</BusSpeed>
+    <ProcessorType>Corew i7 14700k</ProcessorType>
+    <IsItReadOnly>false</IsItReadOnly>
+    <IsActived>true</IsActived>
+    <IsDeleted>false</IsDeleted>
+    <CreationTime>2025-02-04T17:53:40.243</CreationTime>
+  </Product>
+  <Product Type="Storage" id="1002">
+    <Name>Samsung 990PRO</Name>
+    <Price>600.00</Price>
+    <ListPrice>0.00</ListPrice>
+    <BrandName>Samsung</BrandName>
+    <CategoryName>Storage</CategoryName>
+    <Description>Storage</Description>
+    <stock>100</stock>
+    <SStock>0</SStock>
+    <imgs>7f524ac5-5cb4-4f63-bafd-38eb8039da28.jpg</imgs>
+    <StorageCapacity>4TB</StorageCapacity>
+    <SequentialWriting>7450MB/S</SequentialWriting>
+    <SequentialReading>6700MB/S</SequentialReading>
+    <connections>PCIexpress 4.0</connections>
+    <Height>44MM</Height>
+    <Width>22mm</Width>
+    <Type>M2</Type>
+    <IsActived>true</IsActived>
+    <IsDeleted>false</IsDeleted>
+    <IsItReadOnly>false</IsItReadOnly>
+    <CreationTime>2025-02-04T17:54:49.937</CreationTime>
+  </Product>
+  <Product Type="Storage" id="1003">
+    <Name>Samsung 990PRO</Name>
+    <Price>200.00</Price>
+    <ListPrice>0.00</ListPrice>
+    <BrandName>Samsung</BrandName>
+    <CategoryName>Storage</CategoryName>
+    <Description>Storage</Description>
+    <stock>100</stock>
+    <SStock>0</SStock>
+    <imgs>474ed490-f76b-4f9f-842e-83e55130266a.jpg</imgs>
+    <StorageCapacity>1TB</StorageCapacity>
+    <SequentialWriting>7450MB/S</SequentialWriting>
+    <SequentialReading>6700MB/S</SequentialReading>
+    <connections>PCIexpress 4.0</connections>
+    <Height>44MM</Height>
+    <Width>22MM</Width>
+    <Type>M2</Type>
+    <IsActived>true</IsActived>
+    <IsDeleted>false</IsDeleted>
+    <IsItReadOnly>false</IsItReadOnly>
+    <CreationTime>2025-02-04T17:59:29.947</CreationTime>
+  </Product>
+  <Product Type="Motherboard" id="1002">
+    <Name>B850 AORUS ELITE</Name>
+    <Price>560.00</Price>
+    <ListPrice>0.00</ListPrice>
+    <BrandName>Asus</BrandName>
+    <CategoryName>Motherboard</CategoryName>
+    <Description>Motherboard</Description>
+    <stock>100</stock>
+    <SStock>10</SStock>
+    <imgs>fe260bc4-751e-4862-8d7f-30c3c96f7c09.jpg</imgs>
+    <MemoryTechnology>DDR 5</MemoryTechnology>
+    <MemorySlot>4X</MemorySlot>
+    <MemoryClockSpeed>7200MHz</MemoryClockSpeed>
+    <PCIVersion>PCIExpress 4.0</PCIVersion>
+    <MultiGPU>true</MultiGPU>
+    <ChipsetManufacturer>AMD</ChipsetManufacturer>
+    <IsActived>true</IsActived>
+    <IsDeleted>false</IsDeleted>
+    <IsItReadOnly>false</IsItReadOnly>
+    <CreationTime>2025-02-04T18:00:48.03</CreationTime>
+  </Product>
+  <Product Type="Motherboard" id="1003">
+    <Name>ROG STIRX B650E</Name>
+    <Price>230.00</Price>
+    <ListPrice>0.00</ListPrice>
+    <BrandName>Asus</BrandName>
+    <CategoryName>Motherboard</CategoryName>
+    <Description>Motherboard</Description>
+    <stock>100</stock>
+    <SStock>10</SStock>
+    <imgs>11ee89a6-52c6-4751-913c-0c67da407967.jpg</imgs>
+    <MemoryTechnology>DDR 5</MemoryTechnology>
+    <MemorySlot>4X</MemorySlot>
+    <MemoryClockSpeed>5200MHz</MemoryClockSpeed>
+    <PCIVersion>PCIExpress 4.0</PCIVersion>
+    <MultiGPU>true</MultiGPU>
+    <ChipsetManufacturer>AMD</ChipsetManufacturer>
+    <IsActived>true</IsActived>
+    <IsDeleted>false</IsDeleted>
+    <IsItReadOnly>false</IsItReadOnly>
+    <CreationTime>2025-02-04T18:04:29.943</CreationTime>
+  </Product>
+  <Product Type="Memory" id="1002">
+    <Name>Patriot Posion 32gb</Name>
+    <Price>70.00</Price>
+    <ListPrice>0.00</ListPrice>
+    <BrandName>Patirot</BrandName>
+    <CategoryName>Memory</CategoryName>
+    <Description>Memory</Description>
+    <stock>10</stock>
+    <SStock>0</SStock>
+    <imgs>4e386f2f-8367-4be8-93df-ca6dd98255fc.jpg</imgs>
+    <MemoryType>DDR5</MemoryType>
+    <CapacityPerModule>16gb</CapacityPerModule>
+    <MemoryFrequency>7200MHz</MemoryFrequency>
+    <TotalMemoryCapacity>32gb</TotalMemoryCapacity>
+    <IsItReadOnly>false</IsItReadOnly>
+    <IsActived>true</IsActived>
+    <IsDeleted>false</IsDeleted>
+    <CreationTime>2025-02-04T18:05:50.133</CreationTime>
+  </Product>
+  <Product Type="Memory" id="1003">
+    <Name>Crucial Deluxe 64gb</Name>
+    <Price>120.00</Price>
+    <ListPrice>0.00</ListPrice>
+    <BrandName>Crucial </BrandName>
+    <CategoryName>Memory</CategoryName>
+    <Description>Memory</Description>
+    <stock>100</stock>
+    <SStock>0</SStock>
+    <imgs>f495253a-f708-4290-83ed-273167232303.jpg</imgs>
+    <MemoryType>DDR 5</MemoryType>
+    <CapacityPerModule>32GB</CapacityPerModule>
+    <MemoryFrequency>7200MHz</MemoryFrequency>
+    <TotalMemoryCapacity>64GB</TotalMemoryCapacity>
+    <IsItReadOnly>false</IsItReadOnly>
+    <IsActived>true</IsActived>
+    <IsDeleted>false</IsDeleted>
+    <CreationTime>2025-02-04T18:08:22.93</CreationTime>
+  </Product>
+</Products>

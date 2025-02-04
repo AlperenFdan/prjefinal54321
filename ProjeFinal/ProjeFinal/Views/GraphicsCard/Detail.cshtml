@@ -1,0 +1,124 @@
+﻿@model ProjeFinal.Models.GraphicsCard
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+ 
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="~/Content/DetailProductStyle.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body style="background: linear-gradient(to bottom,Black,Black,#6a9a3c,#8cbf4e,#5f8236,Black,Black);">
+
+    <div class="ProductPage">
+        <div class="ProductImage">
+            <img src="~/MyDataForFinalProject/Photos/@Model.imgs" />
+
+        </div>
+
+        <div class="ProductSafeArea">
+            <div class="ProductNameArea">
+                <Span class="PorpH" style="font-family: Calibri">@Model.Name</Span>
+            </div>
+            <div class="FavrotiesPlace">
+
+                @if (ViewBag.Fav == null)
+                {
+                    <a href="@Url.Action("AddToFav","Favroites",new {Pid=Model.ID,typ = "GraphicsCard"})">
+                        <img src="~/MyHelpers/images (1)-Photoroom.png" />
+                    </a>
+                }
+                else
+                {
+                    <a href="@Url.Action("Delete","Favroites",new {Pid=Model.ID,typ = "GraphicsCard"})">
+                        <img src="~/MyHelpers/60993.png" />
+                    </a>
+
+                }
+
+            </div>
+
+            <div class="ProductDescriptionArea">
+                <label class="ProductDescription">@Model.Description</label>
+            </div>
+            <div style="clear:both"></div>
+
+            <div class="ProductStockArea">
+                <label class="ProductStock">Mevcut stok: @Model.stock Adet</label>
+            </div>
+            <div class="ProductPriceArea">
+                @if (Model.ListPrice < Model.Price && Model.ListPrice != 0)
+                {
+                    <label class="ProductPrice">@Model.ListPrice$  </label>
+                    <del class="ProductPrice">@Model.Price $ </del>
+
+                }
+                else
+                {
+                    <label class="ProductPrice">@Model.Price $</label>
+                }
+            </div>
+            <div class="AddToCart">
+                @using (Html.BeginForm("AddToCart", "SCart", FormMethod.Post))
+                {
+                    @Html.Hidden("Pid", Model.ID)
+                    @Html.Hidden("typ", "GraphicsCard")
+                    <input type="number" name="q" class="Qu" value="1" min="1" max="@Model.stock" />
+                    <input type="submit" class="inputb" value="Sepete Ekle" />
+                }
+
+            </div>
+
+        </div>
+        <div style="clear:both"></div>
+        <div class="ProductProp">
+            <div class="PropCanvasS"> <span class="PorpH">Özellikler</span> </div>
+            <div class="PropCanvas">
+                <div class="PropName">Ürün VRAM Kapestesi: </div>
+                <div class="PropValue"> @Model.VRAM GB</div>
+
+                <div class="PropNameR">Ürün Serisi: </div>
+                <div class="PropValueR"> @Model.Series</div>
+
+                <div style="clear:both"></div>
+
+                <div class="PropName">Ürün Bit'i:  </div>
+                <div class="PropValue"> @Model.bitnumber Bit</div>
+
+                <div class="PropNameR">Ürün Uyumlu Bağlantısı: </div>
+                <div class="PropValueR">@Model.CompatibleConnect</div>
+
+                <div style="clear:both"></div>
+
+                <div class="PropName">Ürün Bağlantıları: </div>
+                <div class="PropValue"> @Model.Connects</div>
+
+                <div class="PropNameR">Ürün Depolama alanı:  </div>
+                <div class="PropValueR"> @Model.StorgeType</div>
+
+                <div style="clear:both"></div>
+
+                <div class="PropName"> Ürün Markası: </div>
+                <div class="PropValue"> @Model.Brand.Name</div>
+
+                <div class="PropNameR">Ürün Kategori:  </div>
+                <div class="PropValueR"> @Model.Category.Name</div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="ContentParent">
+        <div class="content">
+            <div class="footer">
+                © 2025 E/H'nin Tüm Hakları Saklıdır.(İade kabul etmiyoruz Anlayışsızlığınız için teşekkürler)
+            </div>
+            <div class="footer">
+                İletişim 0534 448 21 08(sonu salladım)
+            </div>
+        </div>
+    </div>
+</body>
+</html>

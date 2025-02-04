@@ -1,0 +1,244 @@
+﻿body {
+    background: linear-gradient(to bottom, Black, #333333 );
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 100vh;
+
+}
+
+.ContentParent {
+    height: 100px;
+    width: 100%;
+    background-color: transparent;
+
+    text-align: center;
+}
+
+.content {
+    padding-top: 20px;
+}
+
+.footer {
+    color: white;
+}
+
+.wrapper {
+    text-align: center;
+}
+.ProductPage {
+  
+   
+   
+    width: 1400px;
+    border: 1px solid rgba(15, 15, 15, 0.1);
+    background-color: rgba(255,255,255,0.5);
+    padding: 15px 30px;
+    border-radius: 20px;
+    margin: 100px auto;
+}
+.ProductImage {
+    background-color: white;
+    border: 1px solid rgba(15, 15, 15,0.3);
+    border-radius: 10px;
+   
+    float: left;
+    height: 320px;
+    width: 400px;
+}
+    .ProductImage img {
+        height: 300px;
+        width: 380px;
+        margin-top: 10px;
+        margin-left: 10px;
+        object-fit: contain;
+    }
+.ProductSafeArea {
+    background-color: white;
+    border: 1px solid rgba(15, 15, 15,0.3);
+    border-radius: 10px;
+  
+    width: 976px;
+    margin-left: 19px;
+    float: left;
+    height: 320px;
+}
+.ProductProp {
+    background-color: white;
+    margin-top: 10px;
+    border: 1px solid rgba(15, 15, 15,0.3);
+    border-radius: 10px;
+    height: 300px;
+    width: 100%;
+}
+.ProductProp h1{
+    margin-top:20px;
+    margin-left:5%;
+
+}
+.PropCanvas {
+    margin-top:5px;
+
+}
+.PropName {
+    color: rgb(112, 112, 112);
+    font-family: "Market Sans", Arial, sans-serif;
+    margin-top: 10px;
+    margin-left: 10%;
+    float: left;
+    width: 20%;
+}
+.PropValue {
+    color: rgb(0, 0, 0);
+    font-family: "Market Sans", Arial, sans-serif;
+    margin-top: 10px;
+    float: left;
+    width: 20%;
+}
+.PropNameR {
+    color: rgb(112, 112, 112);
+    font-family: "Market Sans", Arial, sans-serif;
+    margin-top: 10px;
+    margin-left: 10%;
+    float: left;
+    width: 20%;
+}
+
+.PropValueR {
+    color: rgb(0, 0, 0);
+    font-family: "Market Sans", Arial, sans-serif;
+    margin-top: 10px;
+    float: left;
+    width: 20%;
+}
+.PropCanvasS {
+    margin-top: 65px;
+    margin-left: 10%;
+}
+.PorpH {
+    text-decoration: none solid rgb(25, 25, 25);
+    font-size: 22px;
+    font-weight: 700;
+    font-style: normal;
+    text-indent: 0px;
+    font-variant: normal;
+    color: rgb(0, 0, 0);
+    font-family: "Market Sans", Arial, sans-serif;
+}
+.ProductNameArea {
+    float:left;
+    margin-top:10px;
+    width: 916px;
+    margin-left:10px;
+}
+.ProductDescriptionArea {
+    margin-top: 10px;
+    width: 916px;
+    height: 150px;
+    margin-left: 10px;
+}
+.FavrotiesPlace{
+    margin-top:20px;
+    float:left;
+}
+.FavrotiesPlace a img{
+    width:30px;
+    height:30px;
+}
+.ProductDescription {
+  
+    text-decoration: none solid rgb(25, 25, 25);
+    color: rgb(0, 0, 0);
+    font-family: Calibri;
+}
+.ProductStockArea {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.ProductStock {
+    color: rgb(25, 25, 25);
+    background-color: rgba(0, 0, 0, 0);
+    font-family: "Market Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 31.92px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+}
+.ProductPriceArea {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.ProductPrice {
+    color: rgb(25, 25, 25);
+    font-weight: 700;
+    font-style: normal;
+    font-variant: normal ;
+
+   
+    text-align: start ;
+    text-indent: 0px ;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: "Market Sans", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 25.92px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+}
+.AddToCart{
+    height:60px;
+    margin-top:20px;
+}
+    .AddToCart .Qu {
+        float: left;
+        width: 40px;
+        height: 45px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 3px;
+        margin-left: 1%;
+    }
+    .AddToCart .inputb {
+        float: left;
+        height: 50px;
+        width: 90%;
+        margin-left: 3%;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease
+    }
+
+        .AddToCart .inputb:hover {
+            background-color: #27ae60;
+            color: #ffffff;
+            border-color: #27ae60;
+            box-shadow: 0 4px 10px rgba(39, 174, 96, 0.4);
+        }
+
+
+.StockIsEmpty {
+    height: 60px;
+    margin-top: 20px;
+    text-align: center
+}
+    .StockIsEmpty label {
+        color: rgb(25, 25, 25);
+        font-weight: 700;
+        font-style: normal;
+        font-variant: normal;
+        text-decoration: none solid rgb(25, 25, 25);
+        text-align: start;
+        text-indent: 0px;
+        background-color: rgba(0, 0, 0, 0);
+        font-family: "Market Sans", Arial, sans-serif;
+        font-size: 24px;
+        line-height: 25.92px;
+        vertical-align: baseline;
+        letter-spacing: normal;
+        word-spacing: 0px;
+    }

@@ -1,0 +1,95 @@
+﻿@model IEnumerable<ProjeFinal.Models.Processor>
+@{
+    ViewBag.Title = "Index"; Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+<head>
+    <link href="~/Content/MainPageStylee.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body style=" background: linear-gradient(to bottom, Black,#02254b,Black); background-repeat: no-repeat;">
+    <div class="ProductImage">
+      
+        <img src="~/MyDataForFinalProject/intel-xeon-gaudi-banner-desk.jpg" />
+    </div>
+    <div class="ProductPage">
+        <div class="kategoriler">
+            <h3> Kategoriler </h3>
+            <a href="@Url.Action("Index","HomePage")">Tüm Ürünlerimiz </a>
+            <a href="@Url.Action("Index","GraphicsCard")">Grafik Kartları</a>
+            <a href="@Url.Action("Index","Processor")" class="active">İşlemciler</a>
+            <a href="@Url.Action("Index","Memory")">RAM</a>
+            <a href="@Url.Action("Index","Motherboard")">Anakartlar</a>
+            <a href="@Url.Action("Index","Storage")">Depolama</a>
+
+        </div>
+        <div class="Background">
+            @foreach (ProjeFinal.Models.Processor prs in Model)
+            {
+                if (prs.IsDeleted == false && prs.IsActived == true)
+                {
+
+                    <div class="products">
+                        <a href="@Url.Action("Detail","Processor", new {id=prs.ID})" style="text-decoration:none">
+                            <div>
+
+                                <img src="~/MyDataForFinalProject/Photos/@prs.imgs" class="image" />
+
+                            </div>
+                            <div class="name">
+                                <label class="name">@prs.Name</label>
+                            </div>
+                            <div class="price">
+
+                                @if (prs.ListPrice < prs.Price && prs.ListPrice != 0)
+                                {
+                                    <label class="price" style=" box-shadow: 0 1px 0px rgb(76 255 0)">@prs.ListPrice $</label>
+                                    <del>@prs.Price$  </del>
+
+                                }
+                                else
+                                {
+                                    <label class="price">@prs.Price $</label>
+                                }
+                            </div>
+                        </a>
+                        <div class="cart">
+                            <a href="@Url.Action("AddToCart","SCart", new {Pid=prs.ID,typ=prs.GetType().Name.ToString().Split('_')[0],q=1})" style="text-decoration:none" class="DetailButton">
+                                Sepete ekle
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+                }
+            }
+
+        </div>
+    </div>
+    <div style="clear:both">
+
+    </div>
+    <div class="ContentParent">
+        <div class="content">
+            <div class="footer">
+                © 2025 E/H'nin Tüm Hakları Saklıdır.(İade kabul etmiyoruz Anlayışsızlığınız için teşekkürler)
+            </div>
+            <div class="footer">
+                İletişim 0534 448 21 08(sonu salladım)
+            </div>
+        </div>
+    </div>
+    @*<div class="wrapper">
+
+        <div class="wpimg">
+            <img src="~/MyDataForFinalProject/1255781-3840x1200-desktop-dual-screen-nvidia-background-image.jpg" />
+        </div>
+
+    </div>*@
+
+</body>
+</html>
+
