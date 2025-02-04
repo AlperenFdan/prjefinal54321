@@ -11,6 +11,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Web;
+using System.Web.Hosting;
 using System.Web.ModelBinding;
 using System.Web.Mvc;
 using System.Web.UI.WebControls;
@@ -23,8 +24,8 @@ namespace ProjeFinal.Areas.ManagerPanel.Controllers
 
     public class MangerHomeController : Controller
     {
-        string SIMG = "C:\\Users\\lastg\\Desktop\\prjefinal54321\\Pictures\\";
-        string MY = @"C:\Users\lastg\Desktop\prjefinal54321\ProjeFinal\ProjeFinal\MyDataForFinalProject\Photos\";
+        string SIMG = "C:/Users/lastg/Desktop/prjefinal54321/Pictures/";
+        string MY = HostingEnvironment.MapPath("~/MyDataForFinalProject/Photos/");
         // GET: ManagerPanel/MangerHome
         EH_Store db = new EH_Store();
         Mylib ml = new Mylib();

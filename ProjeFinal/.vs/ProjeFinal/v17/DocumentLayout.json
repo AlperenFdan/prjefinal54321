@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\areas\\managerpanel\\views\\mangerhome\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\areas\\managerpanel\\controllers\\mangerhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\areas\\managerpanel\\controllers\\mangerhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|c:\\users\\lastg\\desktop\\prjefinal54321\\projefinal\\projefinal\\areas\\managerpanel\\views\\mangerhome\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\areas\\managerpanel\\views\\mangerhome\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\areas\\managerpanel\\controllers\\mangerhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\areas\\managerpanel\\controllers\\mangerhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\areas\\managerpanel\\controllers\\graphicscardformangercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\areas\\managerpanel\\controllers\\graphicscardformangercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|c:\\users\\lastg\\desktop\\prjefinal54321\\projefinal\\projefinal\\views\\homepage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\views\\homepage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\areas\\managerpanel\\views\\graphicscardformanger\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\areas\\managerpanel\\views\\graphicscardformanger\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|c:\\users\\lastg\\desktop\\prjefinal54321\\projefinal\\projefinal\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|c:\\users\\lastg\\desktop\\prjefinal54321\\projefinal\\projefinal\\views\\homepage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\views\\homepage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\views\\graphicscard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -69,10 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\models\\memory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\models\\memory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\areas\\managerpanel\\controllers\\graphicscardformangercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\areas\\managerpanel\\controllers\\graphicscardformangercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\models\\storage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -125,7 +125,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 1151,
+          "DockedWidth": 899,
           "SelectedChildIndex": 2,
           "Children": [
             {
@@ -138,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Views\\HomePage\\Index.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Views\\HomePage\\Index.cshtml",
@@ -151,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "IndexStyle.css",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Data\\Styles\\IndexStyle.css",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Data\\Styles\\IndexStyle.css",
@@ -175,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Memory.cs",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Models\\Memory.cs",
               "RelativeDocumentMoniker": "ProjeFinal\\Models\\Memory.cs",
@@ -187,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ManagerHomeStyle.css",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Data\\Styles\\ManagerHomeStyle.css",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Data\\Styles\\ManagerHomeStyle.css",
@@ -211,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "MangerLogin.css",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Data\\Styles\\MangerLogin.css",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Data\\Styles\\MangerLogin.css",
@@ -224,12 +224,12 @@
           ]
         },
         {
-          "DockedWidth": 1452,
-          "SelectedChildIndex": 17,
+          "DockedWidth": 1704,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Views\\Login\\Index.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Views\\Login\\Index.cshtml",
@@ -237,12 +237,11 @@
               "RelativeToolTip": "ProjeFinal\\Views\\Login\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAABvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-04T01:24:56.004Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T01:24:56.004Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Views\\MangerHome\\Index.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Views\\MangerHome\\Index.cshtml",
@@ -254,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Mylib.cs",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\MyHelpers\\Mylib.cs",
               "RelativeDocumentMoniker": "ProjeFinal\\MyHelpers\\Mylib.cs",
@@ -266,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "StoreInformation.xml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Models\\StoreInformation.xml",
               "RelativeDocumentMoniker": "ProjeFinal\\Models\\StoreInformation.xml",
@@ -278,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Views\\GraphicsCardForManger\\Index.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Views\\GraphicsCardForManger\\Index.cshtml",
@@ -290,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 2,
               "Title": "GraphicsCardForMangerController.cs",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Controllers\\GraphicsCardForMangerController.cs",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Controllers\\GraphicsCardForMangerController.cs",
@@ -387,7 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Views\\BrandForManager\\Edit.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Views\\BrandForManager\\Edit.cshtml",
@@ -395,12 +394,11 @@
               "RelativeToolTip": "ProjeFinal\\Areas\\ManagerPanel\\Views\\BrandForManager\\Edit.cshtml",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-03T16:53:42.328Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T16:53:42.328Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Views\\GraphicsCard\\Index.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Views\\GraphicsCard\\Index.cshtml",
@@ -408,12 +406,11 @@
               "RelativeToolTip": "ProjeFinal\\Views\\GraphicsCard\\Index.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-03T09:50:03.74Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T09:50:03.74Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Views\\GraphicsCardForManger\\Edit.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Views\\GraphicsCardForManger\\Edit.cshtml",
@@ -425,7 +422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Views\\GraphicsCardForManger\\Create.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Views\\GraphicsCardForManger\\Create.cshtml",
@@ -433,12 +430,11 @@
               "RelativeToolTip": "ProjeFinal\\Areas\\ManagerPanel\\Views\\GraphicsCardForManger\\Create.cshtml",
               "ViewState": "AgIAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-03T09:49:46.32Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T09:49:46.32Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Home.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Views\\MangerHome\\Home.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Views\\MangerHome\\Home.cshtml",
@@ -451,20 +447,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MangerHomeController.cs",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Controllers\\MangerHomeController.cs",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Controllers\\MangerHomeController.cs",
               "ToolTip": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Controllers\\MangerHomeController.cs",
               "RelativeToolTip": "ProjeFinal\\Areas\\ManagerPanel\\Controllers\\MangerHomeController.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAAASwLEAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAACMBAAAAAAAAAAASwIcBAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-03T09:43:21.199Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Views\\CategoryForManager\\Index.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Views\\CategoryForManager\\Index.cshtml",
