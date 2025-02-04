@@ -36,7 +36,7 @@ namespace ProjeFinal.Models
         [ForeignKey("CategoryID")]
         public virtual Category Category { get; set; }
 
-        [Display(Name = "Açıklama")]
+        [Display(Name = "Depolama Türü")]
         [StringLength(maximumLength: 350, ErrorMessage = "Bu alan Maksimum 350 Karakterden oluşabilir!")]
         [DataType(DataType.MultilineText)]
         public string Description { get; set; }
