@@ -32,18 +32,18 @@
                 <table class="Table">
                     <tr>
 
-                        <th>Ürün resmi</th>
+                        <th width="90">Ürün resmi</th>
 
-                        <th>
+                        <th width="50">
                             Ürün ismi
                         </th>
-                        <th>
+                        <th width="50">
                             Miktar
                         </th>
-                        <th>
+                        <th width="50">
                             Ürün birim fiyatı
                         </th>
-                        <th>
+                        <th width="50">
                             Ürün Toplam fiyatı
                         </th>
 
@@ -54,27 +54,27 @@
                     <tr>
 
                         <td> <img src="~/MyDataForFinalProject/Photos/@item.GetType().GetProperty("imgs").GetValue(item)" /></td>
-                        <td>
+                        <td  width="50">
                             @item.GetType().GetProperty("Name").GetValue(item)
                         </td>
 
-                        <td>
+                        <td  width="50">
                             <a href="@Url.Action("ChangeQuantity", "SCart", new { Pid = IDForView, up = false ,typ = TypeForItem})" style="text-decoration:none">-</a>
                             <input type="text" value="@scarts[i].Quantity" readonly style="width: 36px; height:28px; text-align: center;" />
                             <a href="@Url.Action("ChangeQuantity", "SCart", new { Pid = IDForView, up = true, typ = TypeForItem })" style="text-decoration:none">+</a>
                         </td>
 
-                        <td>
+                        <td  width="50">
                             @scarts[i].price
                         </td>
 
-                        <td>
+                        <td  width="50">
 
                             @ProductQunatityxPrice
                         </td>
 
-                        <td>
-                            <a href="@Url.Action("Detail",TypeForItem,new {id=IDForView})" class="Edita">Ürüne git</a>
+                        <td width="250">
+                            <a href="@Url.Action("Detail",TypeForItem,new {id=IDForView})" class="Edita">Ürün</a>
                             <a href="@Url.Action("Delete","SCart",new { id = scarts[i].ID})" class="Deletea">Sil</a>
                         </td>
                     </tr>

@@ -21,7 +21,11 @@ namespace ProjeFinal.Controllers
             int iud = (Session["User"] as Users).ID;
             foreach (Favorites item in db.Favorites.Where(x => iud == x.userID))
             {
-                list.Add(ml.GetArticle(item.ProductType, item.ProductID));
+                if (ml.GetArticle(item.ProductType, item.ProductID) != null)
+                {
+                    list.Add(ml.GetArticle(item.ProductType, item.ProductID));
+                }
+              
             }
             return View(list);
         }

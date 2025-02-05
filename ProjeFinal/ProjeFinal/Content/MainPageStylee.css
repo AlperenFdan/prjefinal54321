@@ -40,24 +40,27 @@ body {
 }
 
     .Table tr {
+        width: 80px;
         /* border-radius: 15px;*/
     }
 
         .Table tr th {
+            width:100px;
             padding: 10px;
-            text-align: left;
+            text-align: center;
             color: black;
             border: 1px solid black;
         }
 
         .Table tr td {
+            width:  100px;
             padding: 10px 30px;
-            text-align: left;
+            text-align: center;
             color: black;
             border: 1px solid black;
         }
         .Table tr td img{
-            width:90px;
+            width:100px;
             height:120px;
         }
 

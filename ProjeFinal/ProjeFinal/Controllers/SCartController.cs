@@ -27,6 +27,7 @@ namespace ProjeFinal.Controllers
                 {
                     list.Add(Product);
                 }
+             
             }
             List<SCart > list2 = new List<SCart>();
             list2.AddRange(db.SCarts.Where(x => x.UserID == id));
