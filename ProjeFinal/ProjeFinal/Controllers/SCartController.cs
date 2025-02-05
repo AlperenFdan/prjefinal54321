@@ -30,7 +30,20 @@ namespace ProjeFinal.Controllers
              
             }
             List<SCart > list2 = new List<SCart>();
-            list2.AddRange(db.SCarts.Where(x => x.UserID == id));
+            foreach (SCart item in db.SCarts)
+            {
+                if (ML.GetArticle(item.ProductType,item.ID) != null)
+                {
+                    list2.Add(item);
+                }
+                else
+                {
+                    SCart removeitem = db.SCarts.Find(item.ID);
+                    db.SCarts.Remove(removeitem);
+                   
+                }
+            }
+            db.SaveChanges();
             ViewBag.ShoppingCarts = list2;
             return View(list);
         }

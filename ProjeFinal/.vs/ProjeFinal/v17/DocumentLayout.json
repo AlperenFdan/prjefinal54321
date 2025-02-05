@@ -3,31 +3,51 @@
   "WorkspaceRootPath": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\views\\scart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\views\\scart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\views\\homepage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\views\\homepage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\areas\\managerpanel\\views\\graphicscardformanger\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\areas\\managerpanel\\views\\graphicscardformanger\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\controllers\\scartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\controllers\\scartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\views\\graphicscard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\views\\graphicscard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\areas\\managerpanel\\controllers\\processorfortmanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\areas\\managerpanel\\controllers\\processorfortmanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\areas\\managerpanel\\controllers\\mangerhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\areas\\managerpanel\\controllers\\mangerhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\areas\\managerpanel\\views\\mangerhome\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\areas\\managerpanel\\views\\mangerhome\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|c:\\users\\lastg\\desktop\\prjefinal54321\\projefinal\\projefinal\\views\\favroites\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\views\\favroites\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|c:\\users\\lastg\\desktop\\prjefinal54321\\projefinal\\projefinal\\controllers\\favroitescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\controllers\\favroitescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\controllers\\favroitescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|c:\\users\\lastg\\desktop\\prjefinal54321\\projefinal\\projefinal\\controllers\\scartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\controllers\\scartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|c:\\users\\lastg\\desktop\\prjefinal54321\\projefinal\\projefinal\\views\\scart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\views\\scart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|c:\\users\\lastg\\desktop\\prjefinal54321\\projefinal\\projefinal\\views\\homepage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\views\\homepage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|c:\\users\\lastg\\desktop\\prjefinal54321\\projefinal\\projefinal\\content\\mainpagestylee.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\content\\mainpagestylee.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\content\\mainpagestylee.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\myhelpers\\mylib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|c:\\users\\lastg\\desktop\\prjefinal54321\\projefinal\\projefinal\\myhelpers\\mylib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\myhelpers\\mylib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -39,32 +59,16 @@
       "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\areas\\managerpanel\\views\\categoryformanager\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|c:\\users\\lastg\\desktop\\prjefinal54321\\projefinal\\projefinal\\models\\graphicscard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\models\\graphicscard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\models\\graphicscard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\areas\\managerpanel\\views\\mangerhome\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\areas\\managerpanel\\views\\mangerhome\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\areas\\managerpanel\\controllers\\mangerhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\areas\\managerpanel\\controllers\\mangerhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\areas\\managerpanel\\controllers\\graphicscardformangercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\areas\\managerpanel\\controllers\\graphicscardformangercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\areas\\managerpanel\\views\\graphicscardformanger\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\areas\\managerpanel\\views\\graphicscardformanger\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\views\\graphicscard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\views\\graphicscard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\areas\\managerpanel\\views\\brandformanager\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -115,10 +119,6 @@
       "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\areas\\managerpanel\\views\\processorfortmanager\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\areas\\managerpanel\\controllers\\processorfortmanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\areas\\managerpanel\\controllers\\processorfortmanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\projefinal\\areas\\managerpanel\\views\\processorfortmanager\\deletepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6EE5C601-EB0C-405E-BAAC-9F975CF20B26}|ProjeFinal\\ProjeFinal.csproj|solutionrelative:projefinal\\areas\\managerpanel\\views\\processorfortmanager\\deletepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -146,7 +146,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1736,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -158,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Views\\Favroites\\Index.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Views\\Favroites\\Index.cshtml",
@@ -171,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "MainPageStylee.css",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Content\\MainPageStylee.css",
               "RelativeDocumentMoniker": "ProjeFinal\\Content\\MainPageStylee.css",
@@ -179,12 +179,11 @@
               "RelativeToolTip": "ProjeFinal\\Content\\MainPageStylee.css",
               "ViewState": "AgIAABsAAAAAAAAAAAAAADkAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-05T03:34:38.444Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T03:34:38.444Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "FavroitesController.cs",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Controllers\\FavroitesController.cs",
               "RelativeDocumentMoniker": "ProjeFinal\\Controllers\\FavroitesController.cs",
@@ -192,51 +191,50 @@
               "RelativeToolTip": "ProjeFinal\\Controllers\\FavroitesController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T03:23:52.305Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T03:23:52.305Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SCartController.cs",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Controllers\\SCartController.cs",
               "RelativeDocumentMoniker": "ProjeFinal\\Controllers\\SCartController.cs",
               "ToolTip": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Controllers\\SCartController.cs",
               "RelativeToolTip": "ProjeFinal\\Controllers\\SCartController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAC0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-05T03:23:19.164Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Views\\SCart\\Index.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Views\\SCart\\Index.cshtml",
               "ToolTip": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Views\\SCart\\Index.cshtml",
               "RelativeToolTip": "ProjeFinal\\Views\\SCart\\Index.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAIwEwAAABtAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAIwF0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-05T03:21:00.004Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Views\\HomePage\\Index.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Views\\HomePage\\Index.cshtml",
               "ToolTip": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Views\\HomePage\\Index.cshtml",
               "RelativeToolTip": "ProjeFinal\\Views\\HomePage\\Index.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-04T01:24:28.895Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "IndexStyle.css",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Data\\Styles\\IndexStyle.css",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Data\\Styles\\IndexStyle.css",
@@ -248,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Storage.cs",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Models\\Storage.cs",
               "RelativeDocumentMoniker": "ProjeFinal\\Models\\Storage.cs",
@@ -260,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "ManagerHomeStyle.css",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Data\\Styles\\ManagerHomeStyle.css",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Data\\Styles\\ManagerHomeStyle.css",
@@ -284,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "MangerLogin.css",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Data\\Styles\\MangerLogin.css",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Data\\Styles\\MangerLogin.css",
@@ -298,11 +296,11 @@
         },
         {
           "DockedWidth": 1941,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "GraphicsCard.cs",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Models\\GraphicsCard.cs",
               "RelativeDocumentMoniker": "ProjeFinal\\Models\\GraphicsCard.cs",
@@ -310,12 +308,11 @@
               "RelativeToolTip": "ProjeFinal\\Models\\GraphicsCard.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAxwDEAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T22:19:38.95Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T22:19:38.95Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Views\\Login\\Index.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Views\\Login\\Index.cshtml",
@@ -327,7 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Views\\MangerHome\\Index.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Views\\MangerHome\\Index.cshtml",
@@ -339,7 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Mylib.cs",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\MyHelpers\\Mylib.cs",
               "RelativeDocumentMoniker": "ProjeFinal\\MyHelpers\\Mylib.cs",
@@ -352,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "StoreInformation.xml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Models\\StoreInformation.xml",
               "RelativeDocumentMoniker": "ProjeFinal\\Models\\StoreInformation.xml",
@@ -364,7 +361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Views\\GraphicsCardForManger\\Index.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Views\\GraphicsCardForManger\\Index.cshtml",
@@ -376,7 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "GraphicsCardForMangerController.cs",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Controllers\\GraphicsCardForMangerController.cs",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Controllers\\GraphicsCardForMangerController.cs",
@@ -389,7 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "GraphicsCardController.cs",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Controllers\\GraphicsCardController.cs",
               "RelativeDocumentMoniker": "ProjeFinal\\Controllers\\GraphicsCardController.cs",
@@ -401,7 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "DeletePage.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Views\\BrandForManager\\DeletePage.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Views\\BrandForManager\\DeletePage.cshtml",
@@ -413,7 +410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Views\\ProcessorFortManager\\Edit.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Views\\ProcessorFortManager\\Edit.cshtml",
@@ -425,7 +422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 5,
               "Title": "ProcessorFortManagerController.cs",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Controllers\\ProcessorFortManagerController.cs",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Controllers\\ProcessorFortManagerController.cs",
@@ -433,7 +430,8 @@
               "RelativeToolTip": "ProjeFinal\\Areas\\ManagerPanel\\Controllers\\ProcessorFortManagerController.cs",
               "ViewState": "AgIAAIsAAAAAAAAAAAAcwKsAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T17:07:49.959Z"
+              "WhenOpened": "2025-02-03T17:07:49.959Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -473,7 +471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Views\\BrandForManager\\Edit.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Views\\BrandForManager\\Edit.cshtml",
@@ -485,7 +483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Views\\GraphicsCard\\Index.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Views\\GraphicsCard\\Index.cshtml",
@@ -493,11 +491,12 @@
               "RelativeToolTip": "ProjeFinal\\Views\\GraphicsCard\\Index.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-03T09:50:03.74Z"
+              "WhenOpened": "2025-02-03T09:50:03.74Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Views\\GraphicsCardForManger\\Edit.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Views\\GraphicsCardForManger\\Edit.cshtml",
@@ -509,19 +508,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Views\\GraphicsCardForManger\\Create.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Views\\GraphicsCardForManger\\Create.cshtml",
               "ToolTip": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Views\\GraphicsCardForManger\\Create.cshtml",
               "RelativeToolTip": "ProjeFinal\\Areas\\ManagerPanel\\Views\\GraphicsCardForManger\\Create.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-03T09:49:46.32Z"
+              "WhenOpened": "2025-02-03T09:49:46.32Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "Home.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Views\\MangerHome\\Home.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Views\\MangerHome\\Home.cshtml",
@@ -529,23 +529,25 @@
               "RelativeToolTip": "ProjeFinal\\Areas\\ManagerPanel\\Views\\MangerHome\\Home.cshtml",
               "ViewState": "AgIAAA0AAAAAAAAAAAAIwBsAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-03T09:49:35.226Z"
+              "WhenOpened": "2025-02-03T09:49:35.226Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
               "Title": "MangerHomeController.cs",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Controllers\\MangerHomeController.cs",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Controllers\\MangerHomeController.cs",
               "ToolTip": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Controllers\\MangerHomeController.cs",
               "RelativeToolTip": "ProjeFinal\\Areas\\ManagerPanel\\Controllers\\MangerHomeController.cs",
-              "ViewState": "AgIAADYBAAAAAAAAAADwv4cBAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAUwKsBAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T09:43:21.199Z"
+              "WhenOpened": "2025-02-03T09:43:21.199Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Views\\CategoryForManager\\Index.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Views\\CategoryForManager\\Index.cshtml",
@@ -553,8 +555,7 @@
               "RelativeToolTip": "ProjeFinal\\Areas\\ManagerPanel\\Views\\CategoryForManager\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-03T09:28:29.207Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T09:28:29.207Z"
             },
             {
               "$type": "Document",
@@ -570,7 +571,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\lastg\\Desktop\\prjefinal54321\\ProjeFinal\\ProjeFinal\\Areas\\ManagerPanel\\Views\\BrandForManager\\Create.cshtml",
               "RelativeDocumentMoniker": "ProjeFinal\\Areas\\ManagerPanel\\Views\\BrandForManager\\Create.cshtml",
@@ -578,8 +579,7 @@
               "RelativeToolTip": "ProjeFinal\\Areas\\ManagerPanel\\Views\\BrandForManager\\Create.cshtml",
               "ViewState": "AgIAABgAAAAAAAAAAAAAACsAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-03T09:26:13.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T09:26:13.479Z"
             }
           ]
         }

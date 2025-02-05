@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Products Version="7">
+<Products Version="8">
   <TotalPrice>
     <Price>0</Price>
   </TotalPrice>
@@ -21,7 +21,7 @@
     <imgs>51343d06-805a-4e10-99fb-75e76e5aacca.png</imgs>
     <VRAM>32</VRAM>
     <Series>40</Series>
-    <bitnumber>256</bitnumber>
+    <bitnumber>528</bitnumber>
     <CompatibleConnect>PCIExpress 4.0</CompatibleConnect>
     <Connects>HDMI, DP</Connects>
     <StorgeType>GDDR5</StorgeType>
@@ -63,7 +63,7 @@
     <imgs>efc511de-6979-4ba8-bca0-efb63108fa69.png</imgs>
     <VRAM>24</VRAM>
     <Series>30</Series>
-    <bitnumber>526</bitnumber>
+    <bitnumber>528</bitnumber>
     <CompatibleConnect>PCIExpress 4.0</CompatibleConnect>
     <Connects>HDMI,DP</Connects>
     <StorgeType>GDDR5</StorgeType>
